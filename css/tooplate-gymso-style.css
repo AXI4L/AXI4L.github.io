@@ -695,3 +695,8 @@ https://www.tooplate.com/view/2119-gymso-fitness
 .blog-list ul{
   list-style: none;
 }
+
+.team-img {
+  width: 200px;
+  height: 200px;
+}
