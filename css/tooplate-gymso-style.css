@@ -220,6 +220,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     width: 100%;
     height: 100%;
     opacity: 0.75;
+    z-index:-1;
   }
 
 
@@ -376,6 +377,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     vertical-align: middle;
     min-height: 100vh;
     position: relative;
+    z-index: 0;
   }
 
 
@@ -699,4 +701,19 @@ https://www.tooplate.com/view/2119-gymso-fitness
 .team-img {
   width: 200px;
   height: 200px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 767px){
+
+  .responsive {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+  }
+
 }

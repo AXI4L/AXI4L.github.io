@@ -11,6 +11,23 @@
      <meta name="author" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+     <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ax1al.com/">
+    <meta property="og:title" content="Axial - Nerds raising the calibre of security research">
+    <meta property="og:description" content="Axial is a community of like minded nerds who focus on reverse engineering, malware analysis and general nerdery regarding to malware.">
+    <meta property="og:image" content="https://ax1al.com/images/axial_square.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ax1al.com/">
+    <meta property="twitter:title" content="Axial - Nerds raising the calibre of security research">
+    <meta property="twitter:description" content="Axial is a community of like minded nerds who focus on reverse engineering, malware analysis and general nerdery regarding to malware.">
+    <meta property="twitter:image" content="https://ax1al.com/images/axial_square.png">
+
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="./images/site.webmanifest">
+
      <link rel="stylesheet" href="../css/bootstrap.min.css">
      <link rel="stylesheet" href="../css/font-awesome.min.css">
      <link rel="stylesheet" href="../css/aos.css">
@@ -93,18 +110,18 @@
                     <br>The screenshots attached below shows the example that how one can simulate a simple host header injection.</p>
                     
                     <br>
-                    <img data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1000/1*PP_R9y_8YPZg0V5zkPbMyw.png"/>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1000/1*PP_R9y_8YPZg0V5zkPbMyw.png"/>
                     <br>
                     <p class="text-white" data-aos="fade-up" data-aos-delay="500">A. Try to pass a random host in the request in burp suite and check in response whether you are able to modify the host or not if you are able to modify the host then maybe that web application is vulnerable to host header injection</p>
 
                     <br>
-                    <img data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1000/1*PSpMtlTmLpwrvSLdMkDABQ.png"/>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1000/1*PSpMtlTmLpwrvSLdMkDABQ.png"/>
                     <br>
                     <p class="text-white" data-aos="fade-up" data-aos-delay="500">B. After knowing that web application is vulnerable to host header injection you should modify the host with attackers host in request and check in response if it gives you 200 OK which means you are able to exploit the host header injection.</p>
 
                     
                     <br>
-                    <img data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1000/1*HlpyszVBhCCqegHDFGIh_A.png"/>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1000/1*HlpyszVBhCCqegHDFGIh_A.png"/>
                     <br>
                     <p class="text-white" data-aos="fade-up" data-aos-delay="500">C. If you get 400 bad request you can try some bypasses in this case, one of the bypasses is this which shown to you in the screenshot above one must approach adding an additional host and another second host you should put the attacker host and after this you maybe able to bypass.</p>
 
