@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Axial - Nerds raising the calibre of security research</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ax1al.com/">
+    <meta property="og:title" content="Axial - Nerds raising the calibre of security research">
+    <meta property="og:description" content="Axial is a community of like minded nerds who focus on reverse engineering, malware analysis and general nerdery regarding to malware.">
+    <meta property="og:image" content="https://ax1al.com/images/axial_square.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ax1al.com/">
+    <meta property="twitter:title" content="Axial - Nerds raising the calibre of security research">
+    <meta property="twitter:description" content="Axial is a community of like minded nerds who focus on reverse engineering, malware analysis and general nerdery regarding to malware.">
+    <meta property="twitter:image" content="https://ax1al.com/images/axial_square.png">
+
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="./images/site.webmanifest">
+
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/font-awesome.min.css">
+     <link rel="stylesheet" href="../css/aos.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="../css/tooplate-gymso-style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="/"><img class="logo" src="../images/axial_square.png"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="/blogs/index.html" class="nav-link smoothScroll">Blogs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/projects/index.html" class="nav-link smoothScroll">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/team.html" class="nav-link smoothScroll">Team</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/community_papers.html" class="nav-link smoothScroll">Community Papers</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+     <!-- HERO -->
+     <section class="hero d-flex flex-column justify-content-center align-items-center">
+            <div class="bg-overlay"></div>
+               <div class="container blogpost">
+                <section class="text-white" data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                            <div>
+                                <h2 class="text-white" data-aos="fade-up" data-aos-delay="500">Reversing Ryuk</h2>
+                            </div>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Hello World, This Will Probably be My First Malware Report Where I will Reverse Ryuk Ransomware. So Before Getting into Technical Analysis and Reverse Engineering I will Provide Some Introduction to Ryuk. So let’s First Discuss the CyberKillChain of Ryuk it goes typically like this:</p>
+                            <pre class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">1- An maldoc Contains a malicious macro that will execute PowerShell.</span><br>
+                                <span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">2- The PowerShell Command then Downloads Emotet Banking Trojan.</span><br>
+                                <span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">3- Emotet Then Downloads TrickBot</span><br>
+                                <span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">4- As A Typical Lateral Movement Activity TrickBot Downloads Ryuk</span><br>
+                                <span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">5- Ryuk Then Tries to Encrypt all the Network Hosts</span><br>
+                            </pre>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">However in new samples it uses BazarLoader and Cobalt Strike and it goes like this. Here I analyzed a sample not old its from 2020 but that’s because I analyzed this sample before ryuk last attack occurred.</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div role="button" tabindex="0" class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                                
+                                                <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1108/0*GqpNzxUb9SImPj9B" srcset="https://miro.medium.com/max/276/0*GqpNzxUb9SImPj9B 276w, https://miro.medium.com/max/552/0*GqpNzxUb9SImPj9B 552w, https://miro.medium.com/max/640/0*GqpNzxUb9SImPj9B 640w, https://miro.medium.com/max/700/0*GqpNzxUb9SImPj9B 700w" sizes="700px" width="1108" height="512">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Who Created It ?</h2>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">So Attribution is Hard However From What I have Read Threat Intel Researches Suggest that it belongs to the Authors of HERMES which is a Ransomware first was detected in October 2017 was then arrtributed to an APT Group Called Lazarus Group.</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            
+                                            <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/330/0*Fz1V0cwIkMrqp4di" srcset="https://miro.medium.com/max/276/0*Fz1V0cwIkMrqp4di 276w, https://miro.medium.com/max/330/0*Fz1V0cwIkMrqp4di 330w" sizes="330px" width="330" height="390">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">In Depth Reversing:</h2>
+                            <ul class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <li class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">I Used a Combination of Cutter, IDA and x64 dbg to reverse this malware so nvm xD</li>
+                                <li class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">When Executing the Sample It Drops a Copy From its Self and Execute it using “8 lan” Command.</li>
+                            </ul>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div role="button" tabindex="0" class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                                
+                                                <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/281/0*aIIPhfQ4B7EvhYvy" srcset="https://miro.medium.com/max/276/0*aIIPhfQ4B7EvhYvy 276w, https://miro.medium.com/max/281/0*aIIPhfQ4B7EvhYvy 281w" sizes="281px" width="281" height="320">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">By Static Code Analysis it Concats “.exe” to the name of the dropped file and executes it using ShellExecute passing a param “8 lan” to it. this command is a hardware feauture called WoL (Wakeup On Lan) which allow a computer to turned on by a network message. it works on a lan network. the way its executed is by the program for our case its ryuk sends a message to all the devices on the same lan.</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            
+                                            <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/526/0*tpsV0I0XK4g-DfGK.PNG" srcset="https://miro.medium.com/max/276/0*tpsV0I0XK4g-DfGK.PNG 276w, https://miro.medium.com/max/526/0*tpsV0I0XK4g-DfGK.PNG 526w" sizes="526px" width="526" height="341">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            
+                                            <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/477/0*sHy87tQfqgC8l47S.PNG" srcset="https://miro.medium.com/max/276/0*sHy87tQfqgC8l47S.PNG 276w, https://miro.medium.com/max/477/0*sHy87tQfqgC8l47S.PNG 477w" sizes="477px" width="477" height="340">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <ul class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <li class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">The Name of the Dropped Exe are Seven Random Characters.</li>
+                                <li class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">The Malware Injects Into 4 Process taskeng.exe, host.exe, dwm.exe, ctfmon.exe</li>
+                                <li class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">It Encrypts the Files using “RYK” Extension</li>
+                                <li class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">The Malware Deletes Shadow Copies Using:</li>
+                            </ul>
+                            <pre class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] cmd /c "WMIC.exe shadowcopy delet<br>[+] vssadmin.exe Delete Shadows /all /quiet</span>
+                            </pre>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div role="button" tabindex="0" class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                                
+                                                <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/921/0*vHFLBpZ6T-Vbo7Ws.PNG" srcset="https://miro.medium.com/max/276/0*vHFLBpZ6T-Vbo7Ws.PNG 276w, https://miro.medium.com/max/552/0*vHFLBpZ6T-Vbo7Ws.PNG 552w, https://miro.medium.com/max/640/0*vHFLBpZ6T-Vbo7Ws.PNG 640w, https://miro.medium.com/max/700/0*vHFLBpZ6T-Vbo7Ws.PNG 700w" sizes="700px" width="921" height="336">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">As You Can See a Typo Found in the First Command The Author Missed ‘e’ in delete.</p>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Deleting the Dropper:</h2>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">It First Passes the path of the dropper so it will further delete.</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            
+                                            <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/608/0*mFMzWg8jReSRaum_.PNG" srcset="https://miro.medium.com/max/276/0*mFMzWg8jReSRaum_.PNG 276w, https://miro.medium.com/max/552/0*mFMzWg8jReSRaum_.PNG 552w, https://miro.medium.com/max/608/0*mFMzWg8jReSRaum_.PNG 608w" sizes="608px" width="608" height="60">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div role="button" tabindex="0" class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                                
+                                                <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/743/0*L7MJxamy96OcCmCv.PNG" srcset="https://miro.medium.com/max/276/0*L7MJxamy96OcCmCv.PNG 276w, https://miro.medium.com/max/552/0*L7MJxamy96OcCmCv.PNG 552w, https://miro.medium.com/max/640/0*L7MJxamy96OcCmCv.PNG 640w, https://miro.medium.com/max/700/0*L7MJxamy96OcCmCv.PNG 700w" sizes="700px" width="743" height="233">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">The Return Value of GetCommandLineA is Stored in EAX which then passed to CommandLineToArgvW. And at last It Calls to DeleteFile to delete the Dropper.</p>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">API Resolving:</h2>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Ryuk Uses GetProcAddress and LoadLibraryA to Resolve Its APIs</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            
+                                            <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/601/0*BDLmnF9Wm19mCDpo.PNG" srcset="https://miro.medium.com/max/276/0*BDLmnF9Wm19mCDpo.PNG 276w, https://miro.medium.com/max/552/0*BDLmnF9Wm19mCDpo.PNG 552w, https://miro.medium.com/max/601/0*BDLmnF9Wm19mCDpo.PNG 601w" sizes="601px" width="601" height="705">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">And By Using the Debugger:</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            
+                                            <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/530/0*cef06cDNn2WR3l6j.PNG" srcset="https://miro.medium.com/max/276/0*cef06cDNn2WR3l6j.PNG 276w, https://miro.medium.com/max/530/0*cef06cDNn2WR3l6j.PNG 530w" sizes="530px" width="530" height="301">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Due to That I don’t Know Emulation or Scripting + Scylla Didn’t Dump the process correctly I managed to rename them manually :) here is the result:</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            
+                                            <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/619/0*869lBe6xHywiYMTK.PNG" srcset="https://miro.medium.com/max/276/0*869lBe6xHywiYMTK.PNG 276w, https://miro.medium.com/max/552/0*869lBe6xHywiYMTK.PNG 552w, https://miro.medium.com/max/619/0*869lBe6xHywiYMTK.PNG 619w" sizes="619px" width="619" height="642">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Privilege Escalation:</h2>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Ryuk Escalates Privilege by Modifying the Access Token</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div role="button" tabindex="0" class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                                
+                                                <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1101/0*W8mupl0Y5A57bRvt.PNG" srcset="https://miro.medium.com/max/276/0*W8mupl0Y5A57bRvt.PNG 276w, https://miro.medium.com/max/552/0*W8mupl0Y5A57bRvt.PNG 552w, https://miro.medium.com/max/640/0*W8mupl0Y5A57bRvt.PNG 640w, https://miro.medium.com/max/700/0*W8mupl0Y5A57bRvt.PNG 700w" sizes="700px" width="1101" height="794">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div role="button" tabindex="0" class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                                
+                                                <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1160/0*ApWNFMcWwzbA7Hn7.PNG" srcset="https://miro.medium.com/max/276/0*ApWNFMcWwzbA7Hn7.PNG 276w, https://miro.medium.com/max/552/0*ApWNFMcWwzbA7Hn7.PNG 552w, https://miro.medium.com/max/640/0*ApWNFMcWwzbA7Hn7.PNG 640w, https://miro.medium.com/max/700/0*ApWNFMcWwzbA7Hn7.PNG 700w" sizes="700px" width="1160" height="624">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">According to MSDN The LookupPrivilegeValue function retrieves the locally unique identifier (LUID) used on a specified system to locally represent the specified privilege name. It Takes 3 Parameters lpSystemName, lpName, lpLuid. What We Care About is the Second Here the Second Param is The Name of The Privilege Looked up In this Case its “ “SeDebugPrivilege” this is used to inspect and Modify the memory of other process. This Will Be Used For Process Injection.</p>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Persistence:</h2>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Ryuk Acheives Persistence by Adding the Path of the malware under /Run Key In the Registry Makes it Run Every Time the User logs In It uses this Command</p>
+                            <pre class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] "C:\Windows\System32\cmd.exe" REG ADD "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "svchos" /t REG_SZ /d "C:\Users\admin\AppData\Local\Temp\860e50.exe" /f</span>
+                            </pre>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Process Injection:</h2>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">First It Opens a Process</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div role="button" tabindex="0" class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                                
+                                                <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/723/0*VqolMocdkYOywfH0.PNG" srcset="https://miro.medium.com/max/276/0*VqolMocdkYOywfH0.PNG 276w, https://miro.medium.com/max/552/0*VqolMocdkYOywfH0.PNG 552w, https://miro.medium.com/max/640/0*VqolMocdkYOywfH0.PNG 640w, https://miro.medium.com/max/700/0*VqolMocdkYOywfH0.PNG 700w" sizes="700px" width="723" height="275">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Then It Allocates Memory in the Target Process</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            
+                                            <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/683/0*ryPxE94i1dR5BMlk.PNG" srcset="https://miro.medium.com/max/276/0*ryPxE94i1dR5BMlk.PNG 276w, https://miro.medium.com/max/552/0*ryPxE94i1dR5BMlk.PNG 552w, https://miro.medium.com/max/640/0*ryPxE94i1dR5BMlk.PNG 640w, https://miro.medium.com/max/683/0*ryPxE94i1dR5BMlk.PNG 683w" sizes="683px" width="683" height="468">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Next it Writes injects its Self using WriteProcessMemory and Creates a Thread to run the injected code</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div role="button" tabindex="0" class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                                
+                                                <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1035/0*up6BvPqS-eluI0YL.PNG" srcset="https://miro.medium.com/max/276/0*up6BvPqS-eluI0YL.PNG 276w, https://miro.medium.com/max/552/0*up6BvPqS-eluI0YL.PNG 552w, https://miro.medium.com/max/640/0*up6BvPqS-eluI0YL.PNG 640w, https://miro.medium.com/max/700/0*up6BvPqS-eluI0YL.PNG 700w" sizes="700px" width="1035" height="592">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Following with the debugger we can see the exectuable in the memory dump</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            
+                                            <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/675/0*h0NqDyppSvXXQPlx.PNG" srcset="https://miro.medium.com/max/276/0*h0NqDyppSvXXQPlx.PNG 276w, https://miro.medium.com/max/552/0*h0NqDyppSvXXQPlx.PNG 552w, https://miro.medium.com/max/640/0*h0NqDyppSvXXQPlx.PNG 640w, https://miro.medium.com/max/675/0*h0NqDyppSvXXQPlx.PNG 675w" sizes="675px" width="675" height="230">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Encryption:</h2>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Ryuk Uses AES-256 Encryption it utilizes the CryptoAPI by Microsoft. It Encrypts the Files using “.RYK” Extension. The AES Key is Encrypted using a Public RSA Key.</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div role="button" tabindex="0" class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                                
+                                                <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/735/0*BQC3jY0rEnIv_cq5.PNG" srcset="https://miro.medium.com/max/276/0*BQC3jY0rEnIv_cq5.PNG 276w, https://miro.medium.com/max/552/0*BQC3jY0rEnIv_cq5.PNG 552w, https://miro.medium.com/max/640/0*BQC3jY0rEnIv_cq5.PNG 640w, https://miro.medium.com/max/700/0*BQC3jY0rEnIv_cq5.PNG 700w" sizes="700px" width="735" height="133">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">It uses a Marker “HERMES” to identify if the file is encrypted or not.</p>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Its Uses:</h2>
+                            <pre class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] CryptEncrypt <br>[+] CryptGenKey <br>[+] CryptDecrypt <br>[+] CryptAquireContextW <br>[+] CryptDestroyKey <br>[+] CryptDeriveKey <br>[+] CryptImportKey</span></pre>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Ryuk Uses MultiThreaded Approach to Encrypt the files which means it makes a thread per file which makes it very fast. It loops Through the Files using FindFirstFileA and FindNextFileA. It Avoid Encrypting Some Files</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            
+                                            <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/563/0*Velf3YBmCHhlSuT3.PNG" srcset="https://miro.medium.com/max/276/0*Velf3YBmCHhlSuT3.PNG 276w, https://miro.medium.com/max/552/0*Velf3YBmCHhlSuT3.PNG 552w, https://miro.medium.com/max/563/0*Velf3YBmCHhlSuT3.PNG 563w" sizes="563px" width="563" height="644">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Here is a List of Them:</h2>
+                            <pre class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] RyukReadMe.html <br>[+] UNIQUE_ID_DO_NOT_REMOVE <br>[+] boot <br>[+] PUBLIC <br>[+] PRIVATE <br>[+] \Windows\<br>[+] sysvol <br>[+] netlogon <br>[+] bin <br>[+] Boot <br>[+] dev <br>[+] etc <br>[+] lib <br>[+] initrd <br>[+] sbin <br>[+] sys <br>[+] vmlinux <br>[+] run <br>[+] var <br>[+] dll <br>[+] lnk <br>[+] hrmlog <br>[+] ini <br>[+] exe</span></pre>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            
+                                            <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/501/0*aMXDZ2ji_UB_yDN7.PNG" srcset="https://miro.medium.com/max/276/0*aMXDZ2ji_UB_yDN7.PNG 276w, https://miro.medium.com/max/501/0*aMXDZ2ji_UB_yDN7.PNG 501w" sizes="501px" width="501" height="701">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Here it builds Strings on stack for folders to avoid encrypting its files or skipping it</p>
+                            <pre class="text-white" data-aos="fade-up" data-aos-delay="500"><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Ahnlab <br>[+] Chrome <br>[+] Mozilla <br>[+] Windows <br>[+] $Recycle.bin</span></pre>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Relation to HERMES:</h2>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">There is two Assumptions One is that that Who Wrote Ryuk was the same who wrote HERMES or just that Ryuk Author was having HERMES Source code. The Encryption Logic is Same as HERMES. As We Saw Ryuk Uses AES-256 and Encrypts the KEY using RSA and that is the same in HERMES. Also Checking the Code the Author Didn’t Change the marker of the encrypted files. This Marker is used to check if the file was encrypted or not. Also HERMES Uses the Same Batch Script used to delete the shadows copies. Even the files/folders that are skipped are the same.</p>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            
+                                            <img alt="Image for post" class="center responsive"  data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/596/0*TZWLjCxONK3hETJk.PNG" srcset="https://miro.medium.com/max/276/0*TZWLjCxONK3hETJk.PNG 276w, https://miro.medium.com/max/552/0*TZWLjCxONK3hETJk.PNG 552w, https://miro.medium.com/max/596/0*TZWLjCxONK3hETJk.PNG 596w" sizes="596px" width="596" height="567">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Yara Rule:</h2>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">You Can Find My YARA Rule Here <a href="https://github.com/astrovax/malwareanalysis/blob/main/Ryuk/detect_ryuk.yara" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">Ryuk</a></p>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">IOCS:</h2>
+                            <pre class="text-white" data-aos="fade-up" data-aos-delay="500"><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">SHA256:40b865d1c3ab1b8544bcf57c88edd30679870d40b27d62feb237a19f0c5f9cd1 <br>SHA1: AD11ED52AB33AD05EB9B1E9ADE134CA1348ACC81 <br>MD5: 484a2bcb1335ac97ee91194f4c0964bc</span></pre>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">TTP’s:</h2>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Command-Line Interface <a href="https://attack.mitre.org/techniques/T1059" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1059</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Execution through API <a href="https://attack.mitre.org/techniques/T1106" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1106</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Service Execution <a href="https://attack.mitre.org/techniques/T1035" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1035</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Registry Run Keys / Startup Folder <a href="https://attack.mitre.org/techniques/T1060" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1060</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Process Injection <a href="https://attack.mitre.org/techniques/T1055" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1055</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Disabling Security Tools <a href="https://attack.mitre.org/techniques/T1089" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1089</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] File Permissions Modification <a href="https://attack.mitre.org/techniques/T1222" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1222</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Modify Registry <a href="https://attack.mitre.org/techniques/T1112" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1112</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Process Injection <a href="https://attack.mitre.org/techniques/T1055" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1055</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Query Registry <a href="https://attack.mitre.org/techniques/T1012" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1012</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] System Service Discovery <a href="https://attack.mitre.org/techniques/T1007" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1007</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Inhibit System Recovery <a href="https://attack.mitre.org/techniques/T1490" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1490</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Access Token Manipulation <a href="https://attack.mitre.org/techniques/T1134/" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1134</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Process Discovery <a href="https://attack.mitre.org/techniques/T1057" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1057</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Service Stop <a href="https://attack.mitre.org/techniques/T1489" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1489</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Impair Defenses: Disable or Modify Tools <a href="https://attack.mitre.org/techniques/T1562" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1562</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] Data Encrypted for Impact <a href="https://attack.mitre.org/techniques/T1486" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">T1486</a></p>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">List of The Commands Executed:</h2>
+                            <pre class="text-white" data-aos="fade-up" data-aos-delay="500"><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] cmd /c \"WMIC.exe shadowcopy delet\</span><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] icacls "C:\*" /grant Everyone:F /T /C /Q</span><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] vssadmin.exe Delete Shadows /all /quiet</span><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] bcdedit /set {default} recoveryenabled No &amp; bcdedit /set {default}</span><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] bootstatuspolicy ignoreallfailures</span><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] "C:\Windows\System32\net.exe" stop "audioendpointbuilder" /y</span><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] C:\Windows\system32\net1 stop "audioendpointbuilder" /y</span><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] "C:\Windows\System32\net.exe" stop "samss" /y</span><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] C:\Windows\system32\net1 stop "samss" /y</span><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] REG  ADD<br>"HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "svchos" /t REG_SZ /d "C:\Users\admin\AppData\Local\Temp\USvoLou.exe" /f</span><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] "C:\Windows\System32\cmd.exe" /C REG ADD "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "svchos" /t REG_SZ /d                                  <br>    "C:\Users\admin\AppData\Local\Temp\USvoLou.exe" /f</span><span class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">[+] /C REG DELETE<br>"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run" /v "svchos" /f</span></pre>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">RansomNote:</h2>
+                            <figure class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                <div role="button" tabindex="0" class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                            <div class="text-white" data-aos="fade-up" data-aos-delay="500">
+                                                
+                                                <img alt="Image for post" class="center responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1913/0*_RKR9HUOAtMBNG0G.PNG" srcset="https://miro.medium.com/max/276/0*_RKR9HUOAtMBNG0G.PNG 276w, https://miro.medium.com/max/552/0*_RKR9HUOAtMBNG0G.PNG 552w, https://miro.medium.com/max/640/0*_RKR9HUOAtMBNG0G.PNG 640w, https://miro.medium.com/max/700/0*_RKR9HUOAtMBNG0G.PNG 700w" sizes="700px" width="1913" height="724">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">Refrences:</h2>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph=""><a href="https://n1ght-w0lf.github.io/malware%20analysis/ryuk-ransomware/" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">https://n1ght-w0lf.github.io/malware%20analysis/ryuk-ransomware/</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph=""><a href="https://www.fortinet.com/blog/threat-research/ryuk-revisited-analysis-of-recent-ryuk-attack" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">https://www.fortinet.com/blog/threat-research/ryuk-revisited-analysis-of-recent-ryuk-attack</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph=""><a href="https://research.checkpoint.com/2018/ryuk-ransomware-targeted-campaign-break/" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">https://research.checkpoint.com/2018/ryuk-ransomware-targeted-campaign-break/</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph=""><a href="https://blog.malwarebytes.com/threat-analysis/2018/03/hermes-ransomware-distributed-to-south-koreans-via-recent-flash-zero-day/" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">https://blog.malwarebytes.com/threat-analysis/2018/03/hermes-ransomware-distributed-to-south-koreans-via-recent-flash-zero-day/</a></p>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph=""><a href="https://app.any.run/tasks/152b6f3a-d6c9-418a-9d0d-3654e26d3117" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">https://app.any.run/tasks/152b6f3a-d6c9-418a-9d0d-3654e26d3117</a></p>
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">GoodBye!</h2>
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500" data-selectable-paragraph="">So That’s It Hope You Enjoy It I am a N00b so my mistakes are alot xD so if u have any suggestions for me feel free to dm on twitter <a href="https://twitter.com/astrovax_" class="text-white" data-aos="fade-up" data-aos-delay="500" rel="noopener nofollow">@astrovax</a></p>
+                        </div>
+                    </div>
+                </section>
+
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Blog by: astrovax <a class="text-white" href="https://twitter.com/astrovax_">[@astrovax_]</a></p>
+
+                    <br><br>
+               </div>
+     </section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="ml-auto col-lg-4 col-md-5">
+                    <p class="copyright-text">Copyright &copy; 2020 Axial Community
+                </div>
+
+                <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                    <ul class="social-icon ml-lg-3">
+                        <li><a href="https://twitter.com/AXI4L " class="fab fa-twitter"></a></li>
+                        <li><a href="https://bit.ly/axialdiscord "><i class="fab fa-discord"></i></a></li>
+                        <li><a href="mailto:contact@ax1al.com"><i class="far fa-envelope"></i></a></li>
+                    </ul>                        
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+     <!-- SCRIPTS -->
+     <script src="../js/jquery.min.js"></script>
+     <script src="../js/bootstrap.min.js"></script>
+     <script src="../js/aos.js"></script>
+     <script src="../js/smoothscroll.js"></script>
+     <script src="../js/custom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Axial - Nerds raising the calibre of security research</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ax1al.com/">
+    <meta property="og:title" content="Axial - Nerds raising the calibre of security research">
+    <meta property="og:description" content="Axial is a community of like minded nerds who focus on reverse engineering, malware analysis and general nerdery regarding to malware.">
+    <meta property="og:image" content="https://ax1al.com/images/axial_square.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ax1al.com/">
+    <meta property="twitter:title" content="Axial - Nerds raising the calibre of security research">
+    <meta property="twitter:description" content="Axial is a community of like minded nerds who focus on reverse engineering, malware analysis and general nerdery regarding to malware.">
+    <meta property="twitter:image" content="https://ax1al.com/images/axial_square.png">
+
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="./images/site.webmanifest">
+
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/font-awesome.min.css">
+     <link rel="stylesheet" href="../css/aos.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="../css/tooplate-gymso-style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="/"><img class="logo" src="../images/axial_square.png"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="/blogs/index.html" class="nav-link smoothScroll">Blogs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/projects/index.html" class="nav-link smoothScroll">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/team.html" class="nav-link smoothScroll">Team</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/community_papers.html" class="nav-link smoothScroll">Community Papers</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+     <!-- HERO -->
+     <section class="hero d-flex flex-column justify-content-center align-items-center">
+            <div class="bg-overlay"></div>
+               <div class="container blogpost">
+                    <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Application of reverse engineering 0x01</h2>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Starting out in reverse engineering</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/500/0*8fVprEmGhK1xsV92" alt="MITRE ATT&cK" />
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-white" data-aos="fade-up" data-aos-delay="500">Thanks for stumbling upon my blog i hope you are healthy and doing great in this hard time. Let’s Talk about what we have touched so far , if you don’t know about what i am talking about please do check out my previous blog . Till now we have talked about how our high level code in C or any other high level language works in assembly with the help of registers and stack. In upcoming blogs we are going to talk how knowledge from the previous blogs can be used to exploit a code or to make it behave differently than how it supposed to behave which includes patching binaries, buffer overflows and format strings. If you feel you are not ready you can always go back to read my previous blog or you can just take up the challenge and keep on reading i will try to keep this blog very simple.</p>
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <strong class="mt-3 d-block text-white" data-aos="fade-up" data-aos-delay="500">Patching binaries</strong>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">I am sure till now you must have came across a paid software which wants you to enter a product key before you start using it so that it can verify a genuine user have you wondered how can it be bypassed i am sure you have to be honest we all have. One of the way to bypass this mechanism is to patch the application’s binary .</p>
+
+                    <br>
+                    <strong class="mt-3 d-block text-white" data-aos="fade-up" data-aos-delay="500">what does patching binaries actually means?</strong>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/700/0*DhmZLcvDKDz4OCvY" alt="image"/>
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">When you come across any software/application there is a way you can alter its code according to your choice but you will have to change the binary because the application that we use are in the compiled form and we do not have access to its source code so to change the code we have to take help of a debugger and disassembler which will show us the code in assembly and we are now ready to deal with assembly if not you know what to do ;) . Let us look at an example how we can alter a code of an application or how we can patch a binary .</p>
+                    
+                    <br>
+                    <strong class="mt-3 d-block text-white" data-aos="fade-up" data-aos-delay="500">Getting our hands dirty</strong>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">I have wrote a basic console application in C which requires a product key to print the successful message . You can use many ways to bypass product key requirement you can either figure out product key by reverse engineering or you can patch the binary or you can find out if there is any vulnerable code which you can exploit. Figuring out product key is pretty simple for my program you can try it out yourself here we are going to focus on binary patching .</p>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/700/1*MDB9p8mOUCjyIqhAZRlSHw.png" alt="image" />
+
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Above message is shown when application start and if you enter a wrong product key it will show “Wrong product key!” message like this.</p>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/638/1*er376TitWsOY5ztGxVZASA.png" alt="image" />
+
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">So we now know how application works and messages it shows so we can use these messages as a reference for the code we want to patch. We are going to use x64dbg for this example. You can get source code and executable here. Now let us open the executable in x64dbg and this is how it looks.</p>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1000/1*tZDu78LIVvB0NsCZifZo5A.png"/>
+                    
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">So we now know how application works and messages it shows so we can use these messages as a reference for the code we want to patch. We are going to use x64dbg for this example. You can get source code and executable here. Now let us open the executable in x64dbg and this is how it looks.</p>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1000/1*tZDu78LIVvB0NsCZifZo5A.png"/>
+                    
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Don’t get overwhelmed after watching so many line of code we just have to deal with particular line of code which we are yet to find. So how are we going to find those line you ask? It is a simple method we just have to find the line of code which is associated with the string which we saw in terminal above . If you look closely in x64dbg window you will find a tab named References it is empty right now we will have to scan for strings in our executable first. For that do the following steps correctly as shown below.</p>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/666/1*7U5HzKzAC8ofoxMdl6ubxw.png"/>
+                    
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">After clicking on String references x64dbg will scan the executable for all the strings present . After the scanning is complete go to References tab now you can find that all the string in executable will be listed there. Can you find something familiar there?</p>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/700/1*AyG_Cotm44dzztPxuYCjTw.png"/>
+
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Hmm the highlighted text look familiar can you remember where we have seen it ? Exactly this is the text which was shown when executable was executed . If you look a little above you will find a text which indicates what message will be printed if we got the product key correct so double click on highlighted text and it will take us to the corresponding code.</p>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/1000/1*tZDu78LIVvB0NsCZifZo5A.png"/>
+
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">This snippet of code look like it is the main function of our application. If you look closely there is a cmp used at address 0x00401499 you probably now know what is cmp used for if not then google it its pretty straight forward. So cmp here is probably comparing our entered product key to some value, told you finding product key for the application is pretty easy.But we are here to patch the binary so lets focus on that first. So the result of cmp will decide if jne(jump if not equal) will be executed or not. If we check where jne is pointing(0x004014A7) you will notice that it is calling a function let’s check out that function .</p>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/700/1*6bEQoGuVpeQA-6QlS47A-A.png"/>
+
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">According to the text that is shown on the right side we can predict that this function will get executed if we enter wrong product key. So we are clear now that we don’t want this jne to be executed .Since we don’t know the product key this jne will be executed every time so what we can do is we can change jne(jump if not equal) to je(jump if equal) so when the product and user input will be same then only this jump will be taken which is not going to happen because we don’t know correct product key. So whenever you enter the wrong product the jump will not be taken and instead function just after jne instruction will be called .Let us look at that function now.</p>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/700/1*g6YonfKh3_p99HKg_e3qFA.png"/>
+                    
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Yes this seem to be the right function to be executed after a correct product key. So let us now change jne to je by double clicking the instruction.</p>
+                    <img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/502/1*yMVsXn2r1o6iU5qrTtYq4A.png"/>
+
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Now to save the changes click on File >> Patch file >> Patch file and save it with whatever name you want . If you run this file again no matter what input you provide to it ,it will always shows “You can now access me”. This was a very basic example which i created for you to make you understand how binary patching works . In real world there multiple application of patching for example :- Sometimes a malware can detect if it is being executed on a virtual machine or not and it can stop executing which is an issue for the analyst because analyst want the malware to execute so he/she can perform behavioral analysis successfully so analyst use binary patching to reverse the logic of malware so it can run on a virtual machine .We will definitely touch on malwares in the later blogs.</p>
+                    
+                    
+                    <strong class="mt-3 d-block text-white" data-aos="fade-up" data-aos-delay="500">About upcoming blog :</strong>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">In the next blog I will be covering you how a vulnerable code can be exploited with the help of reverse engineering techniques . I am planing to be more frequent from now on so be prepared for the awesome journey we are going to have . Keep practicing to get better because that’s the only solution. Till then happy reversing !!</p>
+                    
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Blog by: Gaurav yadav <a class="text-white" href="https://twitter.com/n0s1kh1ya">[@n0s1kh1ya]</a></p>
+
+                    <br><br>
+               </div>
+     </section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="ml-auto col-lg-4 col-md-5">
+                    <p class="copyright-text">Copyright &copy; 2020 Axial Community
+                </div>
+
+                <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                    <ul class="social-icon ml-lg-3">
+                        <li><a href="https://twitter.com/AXI4L " class="fab fa-twitter"></a></li>
+                        <li><a href="https://bit.ly/axialdiscord "><i class="fab fa-discord"></i></a></li>
+                        <li><a href="mailto:contact@ax1al.com"><i class="far fa-envelope"></i></a></li>
+                    </ul>                        
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+     <!-- SCRIPTS -->
+     <script src="../js/jquery.min.js"></script>
+     <script src="../js/bootstrap.min.js"></script>
+     <script src="../js/aos.js"></script>
+     <script src="../js/smoothscroll.js"></script>
+     <script src="../js/custom.js"></script>
+
+</body>
+</html>

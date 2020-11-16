@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Axial - Nerds raising the calibre of security research</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ax1al.com/">
+    <meta property="og:title" content="Axial - Nerds raising the calibre of security research">
+    <meta property="og:description" content="Axial is a community of like minded nerds who focus on reverse engineering, malware analysis and general nerdery regarding to malware.">
+    <meta property="og:image" content="https://ax1al.com/images/axial_square.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ax1al.com/">
+    <meta property="twitter:title" content="Axial - Nerds raising the calibre of security research">
+    <meta property="twitter:description" content="Axial is a community of like minded nerds who focus on reverse engineering, malware analysis and general nerdery regarding to malware.">
+    <meta property="twitter:image" content="https://ax1al.com/images/axial_square.png">
+
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="./images/site.webmanifest">
+
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/font-awesome.min.css">
+     <link rel="stylesheet" href="../css/aos.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="../css/tooplate-gymso-style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="/"><img class="logo" src="../images/axial_square.png"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="/blogs/index.html" class="nav-link smoothScroll">Blogs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/projects/index.html" class="nav-link smoothScroll">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/team.html" class="nav-link smoothScroll">Team</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/community_papers.html" class="nav-link smoothScroll">Community Papers</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+     <!-- HERO -->
+     <section class="hero d-flex flex-column justify-content-center align-items-center">
+            <div class="bg-overlay"></div>
+               <div class="container blogpost">
+                    <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">OS Command injection: Beginner’s Guide</h2>
+                    <center><img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/200/1*uNBQm22Vlw_fNdY2vVAk0w.jpeg" style="height:40%;width:20%;" alt="image"/></center>
+                    
+                    <br>
+                    <strong class="mt-3 d-block text-white" data-aos="fade-up" data-aos-delay="500">What is OS Command Injection?</strong>
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Code injection is the exploitation of a bug that is caused by improper data processing. The injection is the method used by attackers to introduce (or “inject”) code into a vulnerable part and changes the course of execution of the code which the attacker wants. Code injection can lead to various attacks like HTML Template injection, Javascript code injection, etc. One among them is OS Command injection, which is an attack through which attackers aim to execute arbitrary commands on the server where the web application is deployed. Command injections are due to unprocessed data which is supplied by the user end through forms, cookies, headers, and URLs which are held to OS command injection.
+                    <br><br><br>
+                    Command injection is not always connected to backend applications alone like PHP, Django, Flask, Node js. Even template injection of Django could also lead to command injection which allows the attacker to leverage and typically fully compromise the entire hosting infrastructure.</p>
+                    
+                    <center><img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/700/1*mzpShrRLLzDUFW9M7fLEYQ.png" alt="image" /></center>
+
+                    <br>
+                    <strong class="mt-3 d-block text-white" data-aos="fade-up" data-aos-delay="500">How and Where to Find Command Injection</strong>
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Any endpoint of a web application that allows the user to enter any input value to be processed by a backend server can be a valid start point for finding any sort of injection point. Consider that respective point as the right way to insert malicious code into the application and gain any functionality the underlying backend application can offer.
+                    <br><br><br>
+                    By understanding how the backend application will be working to generate various payload with trial and error method to identify the valid code to inject the template, otherwise even payload which is already available on the internet can be used for brute-forcing the input parameter.</p>
+
+                    <br>
+                    <center><img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/700/1*m37I2g9M9WLzJJdwbmG3CA.png" alt="image" /></center>
+
+                    <br>
+                    <strong class="mt-3 d-block text-white" data-aos="fade-up" data-aos-delay="500">Some useful commands to test for Command Injection</strong>
+                    <br>
+                    <center>
+                    <code><pre style="font-size:18px;color:white" data-aos="fade-up" data-aos-delay="500">| Command  |  Linux |Windows |
+|----------|--------|--------|
+| Username | whoami | whoami |
+|OS Version|uname -a|  ver   |
+|IP address|ifconfig|ipconfig|
+|Int. Conn.|netstat |netstat |
+|Process   |ps -aux |tasklist|</pre></code></center>
+                    
+                    <br>
+                    <a href="https://portswigger.net/web-security/os-command-injection/lab-simple">
+                    <strong class="mt-3 d-block text-white" data-aos="fade-up" data-aos-delay="500">Lab: OS command injection</strong>
+                    <br>
+                    <center><img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/700/1*DXpGUE5xgnLp02pZka4bFw.png" alt="image" /></center>
+                    </a>
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">This the web application which is provided by the port swinger for testing and even with wappalyzer, you would not find what is backend application which is running this application so you can go by looking into the endpoints of the application.
+                    <br><br>
+                        Since the index page is already displaying the list of products, and on clicking the product there is another page that displays in detail each product and it has a URL parameter which productId=1,2,3… but unfortunately it, not the right point for command injection since it fetches the details through API which restrict all special characters.
+                    <br><br>
+                        But you can find an interesting functionality of the application which is used to check for available stocks of the current product and it has an input parameter of the location to check the product availability. So here comes the tool usage of BurpSuite, which is a proxy-based tool used to evaluate the security of web-based applications and do hands-on testing.
+                    <br><br>
+                        You have to export and install the certificate generated from BurpSuite in order to intercept the request and modify it.</p>
+
+                    <br>
+                    <center><img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/700/1*M2NyOt2Jbmz9iD4rsAm_VA.png" alt="image"/></center>
+                    
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Here in the request, you would see a new parameter of store id which is a hidden parameter sent from the clientside to serverside for validation. Which means this hidden parameter would be the right point for testing out payload for command injection
+                    <br><br>
+                        By tampering the storeid parameter with payload 1;id, here id is a Linux command used to view the current user groups and uid. In the assumption that the infrastructure would be running a Linux based operating system.</p>
+
+                    <center><img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/700/1*pN8wS167mhJgBcpo5iajzg.png" alt="image"/></center>
+
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">After modifying the request you would forward the request to the server and stop intercept to check the response in the browser and you could see their availability count and nearby command executed output. This means our payload worked in the right sense for executing out arbitrary code in the infrastructure of the hosting service.</p>
+
+                    <center><img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/700/1*Dfn94dgVKS3e-DyEFcM4ww.png" alt="image"/></center>
+
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">You could also intercept the request and sent to repeater to check all kind of payload you want to check, repeater is used to send request multiple times and check HTML response in raw text.</p>
+
+                    <center><img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/700/1*khwqkXJDgmJH5LM8xll-Ng.png" alt="image"/></center>
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">If you have executed any valid command in the server then you will be seeing this new popup which says Congratulations, you solved this lab!. Here is the end of a walkthrough of the portswigger lab for OS command injection in a simple case.</p>
+                    <br>    
+
+                    <strong class="mt-3 d-block text-white" data-aos="fade-up" data-aos-delay="500">Impact of Command Injection</strong>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Command Injection attack can cause highly disruptive damage to hosting infrastructure and may lead the attacker to steal information, corrupt the data even can take full control of the server. If an attacker gains control of the server then they can use the underlying application to exploit which can result in a huge loss for the organization and which impacts the reputation of the organization too.</p>
+                    
+                    <br><br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Blog by: T3cH_W1z4rD <a class="text-white" href="https://twitter.com/aravindha1234u">[@aravindha1234u]</a></p>
+
+                    <br><br>
+               </div>
+     </section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="ml-auto col-lg-4 col-md-5">
+                    <p class="copyright-text">Copyright &copy; 2020 Axial Community
+                </div>
+
+                <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                    <ul class="social-icon ml-lg-3">
+                        <li><a href="https://twitter.com/AXI4L " class="fab fa-twitter"></a></li>
+                        <li><a href="https://bit.ly/axialdiscord "><i class="fab fa-discord"></i></a></li>
+                        <li><a href="mailto:contact@ax1al.com"><i class="far fa-envelope"></i></a></li>
+                    </ul>                        
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+     <!-- SCRIPTS -->
+     <script src="../js/jquery.min.js"></script>
+     <script src="../js/bootstrap.min.js"></script>
+     <script src="../js/aos.js"></script>
+     <script src="../js/smoothscroll.js"></script>
+     <script src="../js/custom.js"></script>
+
+</body>
+</html>

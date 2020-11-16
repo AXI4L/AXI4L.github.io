@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Axial - Nerds raising the calibre of security research</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ax1al.com/">
+    <meta property="og:title" content="Axial - Nerds raising the calibre of security research">
+    <meta property="og:description" content="Axial is a community of like minded nerds who focus on reverse engineering, malware analysis and general nerdery regarding to malware.">
+    <meta property="og:image" content="https://ax1al.com/images/axial_square.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ax1al.com/">
+    <meta property="twitter:title" content="Axial - Nerds raising the calibre of security research">
+    <meta property="twitter:description" content="Axial is a community of like minded nerds who focus on reverse engineering, malware analysis and general nerdery regarding to malware.">
+    <meta property="twitter:image" content="https://ax1al.com/images/axial_square.png">
+
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="./images/site.webmanifest">
+
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/font-awesome.min.css">
+     <link rel="stylesheet" href="../css/aos.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="../css/tooplate-gymso-style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="/"><img class="logo" src="../images/axial_square.png"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="/blogs/index.html" class="nav-link smoothScroll">Blogs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/projects/index.html" class="nav-link smoothScroll">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/team.html" class="nav-link smoothScroll">Team</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/community_papers.html" class="nav-link smoothScroll">Community Papers</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+     <!-- HERO -->
+     <section class="hero d-flex flex-column justify-content-center align-items-center">
+            <div class="bg-overlay"></div>
+               <div class="container blogpost">
+                    <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Sockpuppets: The Make or Break of an Investigation</h2>
+                    <center><img class="responsive" data-aos="fade-up" data-aos-delay="500" src="https://miro.medium.com/max/520/1*h6u53PSw2FCH3M-fxSnT7g.jpeg" alt="image"/></center>
+                    
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">In any sort of OSINT Investigation, many sites require an account to interact with the adversary . That’s where Sockpuppets come into play . Sockpuppets are basically can be defined as your Alternate Persona that has a social media account. It provides a level of anonymity during Investigations as well as OPSEC not just to the person conducting the Investigation but also to the Target that is being investigated. Creating successful puppets is an art, and the knowledge of creating them is not widely covered as everyone has their own tradecraft for it.
+                    <br><br>
+                        Before we set up our sock, we need to consider a few questions, such as the Target in question, their interests, your IP address, your behavior of clicking, and how you’ll blend in with them. You will also have to consider Anonymity oriented account vs a Privacy Oriented account.
+                    <br><br>
+                        You will just need to create an account with enough details to bypass site verification. After creating your account, you will also have to do an investigation on your own account, just to see if it can be traced back to you or not. It’s generally good OPSEC to do it if you’re planning to make a Persistent Account.</p>
+
+                    <strong class="mt-3 d-block text-white" data-aos="fade-up" data-aos-delay="500">Setting Up your Sock</strong>
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">A few things you should have in hand before we work on making our sockpuppets are:</p>
+                    <ul class="text-white" data-aos="fade-up" data-aos-delay="500">
+                        <li>An Email like ProtonMail, Tutanora, or if you’re doing an Investigation where you don’t worry about being tracked Gmail, Outlook, Yahoo. (Note: Sometimes Encrypted emails may get flagged)</li>
+                        <li>Burner Number or a VoIP Number</li>
+                        <li>VMs (VMware, Hyper-V, Oracle VM, etc.)</li>
+                        <li>VPN (I personally prefer ProtonVPN or ExpressVPN)</li>
+                        <li>If you truly want to be Persistent you can also use a Dedicated System for it.</li>
+                    </ul>
+
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Depending on who is your target, you’ll need to set up an account with a name that is common to that country. It tends to reduce any form of suspicion if the site tries to push notifications, such as LinkedIn. Personality-wise you need to think about their workplace, their interests, hobbies. If you’re making a persistent account you can build their friends and family as well.
+                    <br><br>
+                        Images linked to the sockpuppet can be created using AI-generated faces and then face-swapped. Or if you wish to, you can use a stock photograph that has been modified heavily will work as well. Images that are created should not show results if reverse image searched.
+                    <br><br>
+                        Depending on how you want to create an account and what kind of account you’re going for, your core considerations should be:</p>
+                    
+                    <ul class="text-white" data-aos="fade-up" data-aos-delay="500">
+                        <li>Name</li>
+                        <li>Gender</li>
+                        <li>Date and Place of Birth</li>
+                        <li>Address</li>
+                        <li>Work</li>
+                        <li>Family</li>
+                        <li>Interests</li>
+                    </ul>
+
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Phone Numbers are required by a lot of the social media account creation for verification. So having a prepaid sim card or a VoIP Phone Number is always good.
+                    <br><br>
+                        You can start off by creating an Identity from here https://www.fakenamegenerator.com/ and then configuring it according to your target’s interest.
+                    <br><br>
+                        Depending on what account you’re creating sometimes you may require a Credit Card or a Social Security Number.</p>
+
+                    <br>
+                    <strong class="mt-3 d-block text-white" data-aos="fade-up" data-aos-delay="500">Taking Care of your Sockpuppet</strong>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">If you’re making a persistent sockpuppet, you will have to care for it by keeping a level of interaction between your account and your interests. Some will also go as far as setting up a family account and friend’s account related to your sockpuppet account. Keeping that level of interaction between Interests and your account keeps it from being burned. You will also have to take into consideration the IP as frequent changes will be flagged and will cause it to get burned. Basically do not do what you won’t do on your real account.
+                    <br><br>
+                        You will also need to set up a password manager as in most investigations you’ll need multiple sockpuppet accounts on different sites as well as fallback accounts incase if an account gets burned.
+                    <br><br>
+                        On Your Browser, you will have to add Tracker Management Extensions like Privacy Badger and AdBlocker. You will also need a Cookie Management Extension like EditThisCookie. Using something like Blur is also great.</p>
+
+                    <strong class="mt-3 d-block text-white" data-aos="fade-up" data-aos-delay="500">The Methodology of Creating a Sockpuppet in a Nutshell</strong>
+                    <ul class="text-white" data-aos="fade-up" data-aos-delay="500">
+                        <li>Making an Encrypted email from ProtonMail and using a Burner VoIP Number.</li>
+                        <li>Generating initial details from fakenamegenerator.com and modifying it according to what suits the investigation</li>
+                        <li>Any payment to be done through privacy enabled services like Bitcoin, OneVanilla Prepaid Cards, etc.</li>
+                        <li>Using a Paid (NOT Free) VPN service or setting up your own service by using AlgoVPN.</li>
+                        <li>Adding Privacy Oriented Extensions on your browser.</li>
+                        <li>Creating your Socks: Facebook, Twitter, Instagram, LinkedIn.</li>
+                    </ul>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">There fore setting up a proper sockpuppet account and persistently using it to investigate the adversary can be counted as one of the very important aspect. The upcoming blogs will be focused on some deeper aspects of OSINT , which will include some practical examples too 😉. If you are looking for harnessing your OSINT skills , would suggest getting familiar with TraceLabs . A pretty neat and dedicated platform which can help you to level up your OSINT game ! Till then happy investigating .</p>
+                    
+                    <br>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="500">Blog by: Argonyte <a class="text-white" href="https://twitter.com/argonyte">[@argonyte]</a></p>
+
+                    <br><br>
+               </div>
+     </section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="ml-auto col-lg-4 col-md-5">
+                    <p class="copyright-text">Copyright &copy; 2020 Axial Community
+                </div>
+
+                <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                    <ul class="social-icon ml-lg-3">
+                        <li><a href="https://twitter.com/AXI4L " class="fab fa-twitter"></a></li>
+                        <li><a href="https://bit.ly/axialdiscord "><i class="fab fa-discord"></i></a></li>
+                        <li><a href="mailto:contact@ax1al.com"><i class="far fa-envelope"></i></a></li>
+                    </ul>                        
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+     <!-- SCRIPTS -->
+     <script src="../js/jquery.min.js"></script>
+     <script src="../js/bootstrap.min.js"></script>
+     <script src="../js/aos.js"></script>
+     <script src="../js/smoothscroll.js"></script>
+     <script src="../js/custom.js"></script>
+
+</body>
+</html>

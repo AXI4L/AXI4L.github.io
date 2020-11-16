@@ -717,3 +717,9 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
