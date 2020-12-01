@@ -28,18 +28,20 @@
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="manifest" href="./images/site.webmanifest">
 
-     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-     <link rel="stylesheet" href="../../css/font-awesome.min.css">
-     <link rel="stylesheet" href="../../css/aos.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/aos.css">
 
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="../../css/tooplate-gymso-style.css">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../../css/tooplate-gymso-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50" >
-
+    
     <!-- MENU BAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -78,23 +80,168 @@
 
         <div class="bg-overlay"></div>
 
+           <div class="container">
+                <div class="row">
+
+                     <div class="col-lg-8 col-md-10 mx-auto col-12">
+                          <div class="hero-text mt-5 text-center">
+
+                                <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">R4PT0R</h1>
+
+                                <h6 data-aos="fade-up" data-aos-delay="500">Explore | Analyze | Report</h6>
+
+                                <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="500">learn more</a>
+                               
+                          </div>
+                     </div>
+
+                </div>
+           </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+            <div class="container">
+                    <div class="row">
+
+                            <div class="col-md-12 col-12">
+                                <h2 class="mb-4" data-aos="fade-up" data-aos-delay="500">What it is?</h2>
+
+                                <p data-aos="fade-up" data-aos-delay="500">An open source and well maintained library for Malware Enthusiasts, Analysts .</p>
+
+                            </div>
+
+                            <div class="col-md-12 col-12" data-aos="fade-up" data-aos-delay="500">
+                                <h2 class="mb-4" data-aos="fade-up" data-aos-delay="500">Why?</h2>
+
+                                <p data-aos="fade-up" data-aos-delay="500">Keeping in mind the community partnership between InQuest Labs and Ax1al, we look forward to analyzing and dedicate reports and papers for YARA Rules, Sigma Rules and all sort of juicy info regarding the in-depth understanding of IOCs and information sources of samples also determining what samples are interesting. If you are an enthusiast this library can be a pretty good playground for you.</p>
+                            </div>
+
+                    </div>
+            </div>
+    </section>
+
+
+    <!-- SCHEDULE -->
+    <section class="schedule section" id="schedule">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-12 text-center">
+                            <h2 class="text-white" data-aos="fade-up" data-aos-delay="500">Malware Samples</h2>
+                        </div>
+
+                        <div class="col-lg-12 py-5 col-md-12 col-12">
+                            <table id="malware_samples" class="table table-bordered table-responsive schedule-table" data-aos="fade-up" data-aos-delay="500">
+                                <thead class="thead-light">
+                                    <th>Classification</th>
+                                    <th>Sample Label</th>
+                                    <th>Sample Description</th>
+                                    <th>Inquest Labs</th>
+                                    <th>Multi AV Report</th>
+                                    <th>Download</th>
+                                </thead>
+                                <tbody style="color:white"></tbody>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
         <div class="container">
             <div class="row">
 
-                <div class="d-flex justify-content-center col-md-12 col-12">
-                    <div>
-                        <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Coming soon...</h1>
-                        <div data-aos="fade-up" data-aos-delay="500" data-type="countdown" data-id="2280161" class="tickcounter" style="width: 100%; position: relative; padding-bottom: 25%">
-                            <a href="//www.tickcounter.com/countdown/2280161/r4pt0r-project-reveal" title="R4PT0R Project Reveal" style="background-color: transparent">R4PT0R Project Reveal</a>
+                    <div class="col-md-12 col-12">
+                        <div class="container" id="ff-compose" data-aos="fade-up"></div>
+                        <script async defer src="https://formfacade.com/include/111954858721015522300/form/1FAIpQLSfxCoTtYfeQHRFGVGkwLv5gZ2P931-ItM5Nzf-nKLgm-suwDg/bootstrap.js?div=ff-compose"></script>
+                    </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <section class="schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12 text-center md-5">
+                    <br><br>
+                    <h6 class="text-white" data-aos="fade-up">Blogs</h6>
+                    <h2 class="text-white" data-aos="fade-up" data-aos-delay="500">Resources</h2>
+                </div>
+            
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <br><br>
+                    <a href="https://inquest.net/blog/2019/10/31/Base64-Encoded-Regular-Expressions-for-Fun-and-Profit"><h6 class="blog-title" data-aos="fade-up" data-aos-delay="500">Base64 Encoded Regular Expressions for Fun and Profit</h6></a>
+                    <br>
+                    <a href="https://inquest.net/blog/2019/07/19/base64-encoded-powershell-pivots"><h6 class="blog-title" data-aos="fade-up" data-aos-delay="500">Base64 Encoded Powershell Pivots</h6></a>
+                </div>
+            </div>
+            <br><br><br><br>
+        </div>
+    </section>
+
+    <!-- CLASS -->
+    <section class="class section" id="class">
+        <div class="container">
+                <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center mb-5">
+                            <h6 data-aos="fade-up">Questions?</h6>
+
+                            <h2 data-aos="fade-up" data-aos-delay="500">FAQ</h2>
                         </div>
-                        <script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
+
+                        <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                            <div class="class-thumb">
+                                <div class="class-info">
+                                    <h3 class="mb-1">What do I do to get started ?</h3>
+                                    <p class="mt-3">You can download the malware samples from our library and you can get started with Malware Analysis also we will help you to get started with YARA Rules and Sigma rules and all other juicy information for making your malware analysis journey a memorable one.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                            <div class="class-thumb">
+                                <div class="class-info">
+                                    <h3 class="mb-1">I just want to get started, but I don't know and I am confused.</h3>
+                                    <p class="mt-3">Your welcome, <a href="https://cutt.ly/axial"><u>Join Our Discord Server</u></a> for resources.</p>
+                                    <br><br><br><br><br>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                            <div class="class-thumb">
+                                <div class="class-info">
+                                    <h3 class="mb-1">What if I misuse those samples ?</h3>
+                                    <p class="mt-3">As a joint initiative between InQuest Labs, we will have a certain set of bindings for usage of the samples for research purposes only.</p>
+                                    <br><br><br><br><br>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center mb-5">
+                        <h6 data-aos="fade-up">Supporters</h6>
+                        <h2 data-aos="fade-up" data-aos-delay="500">Community Partners</h2>
+                    </div>
+
+                    <div class="col-md-12">
+                        <img src="https://inquest.net/themes/custom/inquest_salted_stone/logo.svg" class="img-fluid" data-aos="fade-up" data-aos-delay="500" alt="Class" width="250px">
+                        <a href="https://inquest.net"><h6 data-aos="fade-up" data-aos-delay="500">https://inquest.net</h6></a>
+                        <br>
+                        <p data-aos="fade-up" data-aos-delay="500">The InQuest platform provides high-throughput Deep File Inspection (DFI) for threat and data leakage prevention, detection, and hunting. We aim to automate and scale the expert knowledge of a typical SOC analyst. Available on-premise or as a service, we leverage a variety of sources in our automated decision-making engine. This includes bi-directional orchestration with multi-scanning and sandbox platforms, unique threat intelligence sources, and a seasoned signature development team augmented by machine learning.</p>
                     </div>
                 </div>
             </div>
-        </div>
-
     </section>
-
+    
     <!-- FOOTER -->
     <footer class="site-footer">
         <div class="container">
@@ -116,12 +263,46 @@
         </div>
     </footer>
 
-     <!-- SCRIPTS -->
-     <script src="../../js/jquery.min.js"></script>
-     <script src="../../js/bootstrap.min.js"></script>
-     <script src="../../js/aos.js"></script>
-     <script src="../../js/smoothscroll.js"></script>
-     <script src="../../js/custom.js"></script>
+    <script type="text/javascript">
+		$.get('https://9a2801fbd18f.ngrok.io/axial/projects/r4pt0r/malware_samples/data.json', function (data) {
+		var tableref = document.getElementById("malware_samples").getElementsByTagName('tbody')[0];
+		var i=0;
+
+		for(i = 0; i < data.length; i++) {
+        	var row = tableref.insertRow();
+			row.insertCell(0).innerHTML=data[i]['classification'];
+			row.insertCell(1).innerHTML=data[i]['sha256'].slice(0, 8);
+			row.insertCell(2).innerHTML=data[i]['description'];
+			
+			var a = document.createElement("a");
+			a.innerHTML="More info";
+			a.setAttribute("href",data[i]['virus_total']);
+            a.setAttribute("style","color: #CA70E0");
+			a.setAttribute("target","_blank");
+			row.insertCell(3).appendChild(a);
+			
+			var a = document.createElement("a");
+			a.innerHTML="View report";
+			a.setAttribute("href","https://labs.inquest.net/dfi/sha256/"+data[i]['sha256']);
+            a.setAttribute("style","color: #CA70E0");
+			a.setAttribute("target","_blank");
+			row.insertCell(3).appendChild(a);
+
+			var a = document.createElement("a");
+			a.innerHTML="Download";
+			a.setAttribute("href",data[i]['url']);
+            a.setAttribute("style","color: #CA70E0");
+			a.setAttribute("target","_blank");
+			row.insertCell(5).appendChild(a);
+		}
+	  });
+	</script>
+    <!-- SCRIPTS -->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/aos.js"></script>
+    <script src="../../js/smoothscroll.js"></script>
+    <script src="../../js/custom.js"></script>
 
 </body>
 </html>
