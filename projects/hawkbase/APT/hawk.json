@@ -73,11 +73,11 @@
   },
   {
     "name":"APT-41",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/report/APT41-DD.pdf",
+    "logo":"https://ax1al.com/projects/hawkbase/APT/card/apt-41.png",
     "nickname":"",
     "TTP":"https://attack.mitre.org/groups/G0039/",
     "News":"https://cse.google.com/cse?cx=509ee0bc09c691038",
-    "Papers":"Papers",
+    "Papers":"https://ax1al.com/projects/hawkbase/APT/report/APT41-DD.pdf",
     "Sample":"Sample"
   },
   {
