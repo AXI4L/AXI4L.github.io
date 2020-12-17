@@ -1,155 +1,802 @@
 [
   {
-    "name":"APT-1",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/apt-1.png",    
-    "nickname":"PLA Unit 61398",
-    "TTP":"https://attack.mitre.org/groups/G0006/",
-    "News":"https://cse.google.com/cse?cx=d98980695d1317653",
-    "Papers":"https://ax1al.com/projects/hawkbase/APT/report/APT1-Comment_Crew_2.pdf",
-    "Sample":"Sample"
+    "name": "APT-1",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-1.png",
+    "TTP": "https://attack.mitre.org/groups/G0006/",
+    "News": "https://cse.google.com/cse?cx=d98980695d1317653",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT1-Comment_Crew_2.pdf",
+    "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/CommentCrewAPT-1.rar"
   },
   {
-    "name":"APT-12",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/apt-12.png",
-    "nickname":"",
-    "TTP":"https://attack.mitre.org/groups/G0005/",
-    "News":"https://cse.google.com/cse?cx=e9bd6cdb9b2e73b67",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "APT-12",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-12.png",
+    "TTP": "https://attack.mitre.org/groups/G0005/",
+    "News": "https://cse.google.com/cse?cx=e9bd6cdb9b2e73b67",
+    "Papers": "Papers",
+    "Sample": "Sample"
   },
   {
-    "name":"APT-16",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/apt-16.png",
-    "nickname":"",
-    "TTP":"https://attack.mitre.org/groups/G0023/",
-    "News":"https://cse.google.com/cse?cx=ec351b28684bf64d4",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "APT-16",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-16.png",
+    "TTP": "https://attack.mitre.org/groups/G0023/",
+    "News": "https://cse.google.com/cse?cx=ec351b28684bf64d4",
+    "Papers": "Papers",
+    "Sample": "Sample"
   },
   {
-    "name":"APT-17",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/apt-17.png",
-    "nickname":"",
-    "TTP":"https://attack.mitre.org/groups/G0025/",
-    "News":"https://cse.google.com/cse?cx=f38951884ce251117",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "APT-17",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-17.png",
+    "TTP": "https://attack.mitre.org/groups/G0025/",
+    "News": "https://cse.google.com/cse?cx=f38951884ce251117",
+    "Papers": "Papers",
+    "Sample": "Sample"
   },
   {
-    "name":"APT-18",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/apt-18.png",
-    "nickname":"",
-    "TTP":"https://attack.mitre.org/groups/G0026/",
-    "News":"https://cse.google.com/cse?cx=6b80a3dd30e04beef",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "APT-18",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-18.png",
+    "TTP": "https://attack.mitre.org/groups/G0026/",
+    "News": "https://cse.google.com/cse?cx=6b80a3dd30e04beef",
+    "Papers": "Papers",
+    "Sample": "Sample"
   },
   {
-    "name":"APT-19",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/apt-19.png",
-    "nickname":"",
-    "TTP":"https://attack.mitre.org/groups/G0073/",
-    "News":"https://cse.google.com/cse?cx=b01371e4916f99e8d",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "APT-19",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-19.png",
+    "TTP": "https://attack.mitre.org/groups/G0073/",
+    "News": "https://cse.google.com/cse?cx=b01371e4916f99e8d",
+    "Papers": "Papers",
+    "Sample": "Sample"
   },
   {
-    "name":"APT-3",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/apt-3.png",
-    "nickname":"",
-    "TTP":"https://attack.mitre.org/groups/G0022/",
-    "News":"https://cse.google.com/cse?cx=3b7630787bc240642",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "APT-3",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-3.png",
+    "TTP": "https://attack.mitre.org/groups/G0022/",
+    "News": "https://cse.google.com/cse?cx=3b7630787bc240642",
+    "Papers": "Papers",
+    "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/APT_3.rar"
   },
   {
-    "name":"APT-30",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/apt-30.png",
-    "nickname":"",
-    "TTP":"https://attack.mitre.org/groups/G0013/",
-    "News":"https://cse.google.com/cse?cx=f07192f26b5aadc49",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "APT-30",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-30.png",
+    "TTP": "https://attack.mitre.org/groups/G0013/",
+    "News": "https://cse.google.com/cse?cx=f07192f26b5aadc49",
+    "Papers": "Papers",
+    "Sample": "Sample"
   },
   {
-    "name":"APT-41",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/apt-41.png",
-    "nickname":"",
-    "TTP":"https://attack.mitre.org/groups/G0039/",
-    "News":"https://cse.google.com/cse?cx=509ee0bc09c691038",
-    "Papers":"https://ax1al.com/projects/hawkbase/APT/report/APT41-DD.pdf",
-    "Sample":"Sample"
+    "name": "APT-41",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-41.png",
+    "TTP": "https://attack.mitre.org/groups/G0096/",
+    "News": "https://cse.google.com/cse?cx=509ee0bc09c691038",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT41-DD.pdf",
+    "Sample": "Sample"
   },
   {
-    "name":"Axiom/APT17",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/axiom.png",
-    "nickname":"",
-    "TTP":"https://attack.mitre.org/groups/G0001/",
-    "News":"News",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "Axiom/APT17",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/axiom.png",
+    "TTP": "https://attack.mitre.org/groups/G0001/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
   },
   {
-    "name":"Black Tech",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/black_tech.png",
-    "nickname":"",
-    "TTP":"TTP",
-    "News":"News",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "Black Tech",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/black_tech.png",
+    "TTP": "https://attack.mitre.org/groups/G0098/",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Black_tech.pdf",
+    "Sample": "Sample"
   },
   {
-    "name":"Blue MockingBird",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/blue_mocking_bird.png",
-    "nickname":"",
-    "TTP":"TTP",
-    "News":"News",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "Blue MockingBird",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/blue_mocking_bird.png",
+    "TTP": "https://attack.mitre.org/groups/G0108/",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Blue_Mockingbird.pdf",
+    "Sample": "Sample"
   },
   {
-    "name":"Chimera",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/chimera.png",
-    "nickname":"",
-    "TTP":"TTP",
-    "News":"News",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "Chimera",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/chimera.png",
+    "TTP": "https://attack.mitre.org/groups/G0114/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
   },
   {
-    "name":"DarkVishnya",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/deep_vishnya.png",
-    "nickname":"",
-    "TTP":"TTP",
-    "News":"News",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "DarkVishnya",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/deep_vishnya.png",
+    "TTP": "https://attack.mitre.org/groups/G0105/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
   },
   {
-    "name":"DragonOK",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/dragonok.png",
-    "nickname":"",
-    "TTP":"TTP",
-    "News":"News",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "DragonOK",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/dragonok.png",
+    "TTP": "https://attack.mitre.org/groups/G0017/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
   },
   {
-    "name":"Dust Storm",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/dust_storm.png",
-    "nickname":"",
-    "TTP":"TTP",
-    "News":"News",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "Dust Storm",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/dust_storm.png",
+    "TTP": "https://attack.mitre.org/groups/G0031/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
   },
   {
-    "name":"Elderwood",
-    "logo":"https://ax1al.com/projects/hawkbase/APT/card/elderwood.png",
-    "nickname":"",
-    "TTP":"TTP",
-    "News":"News",
-    "Papers":"Papers",
-    "Sample":"Sample"
+    "name": "Elderwood",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/elderwood.png",
+    "TTP": "https://attack.mitre.org/groups/G0066/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "APT-22",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/suckfly.png",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT22-Suckfly.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Ke3chang/APT-15",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-15.png",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT15-Chan.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Leviathan/APT-40",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-40.png",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT40-Leviathan.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Lotus Blossom",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/lotus_blossom.png",
+    "TTP": "https://attack.mitre.org/groups/G0030/",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Lotus_Blossom.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "menuPass/APT-10",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-10.png",
+    "TTP": "https://attack.mitre.org/groups/G0045/",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT10ORMENUPASS.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Moafee/DRAGONOK",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/moafee.png",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Moafee.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Mofang",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/mofang.png",
+    "TTP": "https://attack.mitre.org/groups/G0103/",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Mofang.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Naikon",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/naikon.png",
+    "TTP": "https://attack.mitre.org/groups/G0019/",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Naikon.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Night Dragon",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/night_dragon.png",
+    "TTP": "https://attack.mitre.org/groups/G0014/",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Night_Dragon.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Orangeworm",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/orangeworm.png",
+    "TTP": "https://attack.mitre.org/groups/G0071/",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Orangeworm.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "PittyTiger",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/pitty_tiger.png",
+    "TTP": "https://attack.mitre.org/groups/G0011/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Putter Panda/APT-2",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/putter_panda.png",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Rancor",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/rancor.png",
+    "TTP": "https://attack.mitre.org/groups/G0075/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Rocke",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/rocke.png",
+    "TTP": "https://attack.mitre.org/groups/G0106/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Scarlet Mimic",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/scarlet_mimic.png",
+    "TTP": "https://attack.mitre.org/groups/G0029/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Soft Cell",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/soft_cell.png",
+    "TTP": "https://attack.mitre.org/groups/G0093/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Suckfly",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0039/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "TA459",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/ta-459.png",
+    "TTP": "https://attack.mitre.org/groups/G0062/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Taidoor",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/taidoor.png",
+    "TTP": "https://attack.mitre.org/groups/G0015/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "APT-20",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-20.png",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT20-ViolentPanda.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "APT-21",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-21.png",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT-21HammerPanda.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Threat Group-3390 /APT-27",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/Threat_Group-3390.png",
+    "TTP": "https://attack.mitre.org/groups/G0027/",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT27_-_EmissaryPanda.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "DarkHydrus",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0079/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "DarkVishnya",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0105/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Honeybee",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/honeybee.png",
+    "TTP": "https://attack.mitre.org/groups/G0072/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Poseidon Group",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/Poseidon_Group.png",
+    "TTP": "https://attack.mitre.org/groups/G0033/",
+    "News": "https://cse.google.com/cse?cx=89c864e385b4ece59",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Patchwork",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/patchwork.png",
+    "TTP": "TTP",
+    "News": "https://cse.google.com/cse?cx=89c864e385b4ece5",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/PatchWork.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "APT-33",
+    "logo": "logo",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/APT-33.rar"
+  },
+  {
+    "name": "APT-39",
+    "logo": "logo",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Charming Kitten",
+    "logo": "logo",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Cleaver",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0003/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Cobalt Group",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0080/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "CopyKittens",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0052/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Group5",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0043/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Leafminer",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/leafminer.png",
+    "TTP": "https://attack.mitre.org/groups/G0077/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Magic Hound/APT-35",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-35.png",
+    "TTP": "https://attack.mitre.org/groups/G0058/",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT-35OR_MAGICHOUND.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "MuddyWater",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/muddy_water.png",
+    "TTP": "https://attack.mitre.org/groups/G0069/",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/MuddyWater.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "OilRig / APT34",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/oil_rig.png",
+    "TTP": "https://attack.mitre.org/groups/G0049/",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/OilRig.pdf",
+    "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/APT34.rar"
+  },
+  {
+    "name": "Dark Caracal",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0070/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Black Oasis",
+    "logo": "logo",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "SilverTerrier",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/silver_terrier.png",
+    "TTP": "https://attack.mitre.org/groups/G0083/",
+    "News": "https://cse.google.com/cse?cx=89c864e385b4ece5",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Darkhotel",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0012/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "FIN6",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0037/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Kimsuky",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/kimsuky.png",
+    "TTP": "https://attack.mitre.org/groups/G0094/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Sharpshooter",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/sharpshooter.png",
+    "TTP": "https://attack.mitre.org/groups/G0104/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Stolen Pencil",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/stolen_pencil",
+    "TTP": "https://attack.mitre.org/groups/G0086/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "APT-37",
+    "logo": "logo",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "APT-38",
+    "logo": "logo",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Gorgon Group",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0078/",
+    "News": "https://cse.google.com/cse?cx=a4f6a2bda5b5b6f3d",
+    "Papers": "Papers",
+    "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/Gorgon_Group.rar"
+  },
+  {
+    "name": "APT-28",
+    "logo": "logo",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/APT28.zip"
+  },
+  {
+    "name": "APT-29",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-29.png",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/CozyBearAPT29.rar"
+  },
+  {
+    "name": "Dragonfly",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0035/",
+    "News": "ttps://cse.google.com/cse?cx=2323d4d29f14d1ee3",
+    "Papers": "Papers",
+    "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/Dragonfly_group.rar"
+  },
+  {
+    "name": "Dragonfly 2.0",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0074/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Gamaredon Group",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0047/",
+    "News": "https://cse.google.com/cse?cx=e85bc0bf970a08fa9",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "GCMAN",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0036/",
+    "News": "https://cse.google.com/cse?cx=b742f37dbf311abfe",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "GOLD SOUTHFIELD",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0115/",
+    "News": "https://cse.google.com/cse?cx=2dfcd39e349a8161",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Inception Framework",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/inception_frawework.png",
+    "TTP": "TTP",
+    "News": "https://cse.google.com/cse?cx=131abaf2a5f34dc0b",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "RTM",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/rtm.png",
+    "TTP": "https://attack.mitre.org/groups/G0048/",
+    "News": "https://cse.google.com/cse?cx=e22125311cce37a7",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Sandworm Team",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/sandworm.png",
+    "TTP": "https://attack.mitre.org/groups/G0034/",
+    "News": "https://cse.google.com/cse?cx=e22125311cce37a75",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Silence",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/silence.png",
+    "TTP": "https://attack.mitre.org/groups/G0091/",
+    "News": "https://cse.google.com/cse?cx=e22125311cce37a7",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "TA505",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/ta-505.png",
+    "TTP": "https://attack.mitre.org/groups/G0092/",
+    "News": "https://cse.google.com/cse?cx=e22125311cce37a75",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "TEMP.Veles",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/temp_velves.png",
+    "TTP": "https://attack.mitre.org/groups/G0088/",
+    "News": "https://cse.google.com/cse?cx=e22125311cce37a7",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "FIN10",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0051/",
+    "News": "https://cse.google.com/cse?cx=23dde9a6a0c1d7e0",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "APT-C 36",
+    "logo": "logo",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Machete",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/machete.png",
+    "TTP": "https://attack.mitre.org/groups/G0095/",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Machete.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Molerats",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/molerats.png",
+    "TTP": "https://attack.mitre.org/groups/G0021/",
+    "News": "https://cse.google.com/cse?cx=89c864e385b4ece5",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Molerats.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "NEODYMIUM",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/neodymium.png",
+    "TTP": "https://attack.mitre.org/groups/G0055/",
+    "News": "https://cse.google.com/cse?cx=89c864e385b4ece59",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Neodymium.pdf",
+    "Sample": "Sample"
+  },
+  {
+    "name": "PROMETHIUM",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/PROMETHIUM.png",
+    "TTP": "https://attack.mitre.org/groups/G0056/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Stealth Falcon",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/sleath_falcon.png",
+    "TTP": "https://attack.mitre.org/groups/G0038/",
+    "News": "https://cse.google.com/cse?cx=89c864e385b4ece59",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Carbanak/FIN7",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0046/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "FIN5",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0053/",
+    "News": "https://cse.google.com/cse?cx=81a6d50d6b07083d0",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "FIN7",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0046/",
+    "News": "https://cse.google.com/cse?cx=08e9d43c50afd01e",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "FIN8",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0061/",
+    "News": "https://cse.google.com/cse?cx=375fb021e98828ecb",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Gallmaker",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0084/",
+    "News": "https://cse.google.com/cse?cx=4d98cb1664a9fae6",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "PLATINUM",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/platinum.png",
+    "TTP": "https://attack.mitre.org/groups/G0068/",
+    "News": "https://cse.google.com/cse?cx=89c864e385b4ece59",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Platinum.pdf",
+    "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/PlatinumGroup.rar"
+  },
+  {
+    "name": "Sowbug",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/sowbug.png",
+    "TTP": "https://attack.mitre.org/groups/G0054/",
+    "News": "https://cse.google.com/cse?cx=89c864e385b4ece5",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Bouncing Golf",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0097/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Strider",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/strider.png",
+    "TTP": "https://attack.mitre.org/groups/G0041/",
+    "News": "https://cse.google.com/cse?cx=89c864e385b4ece59",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "Equation",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0020/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/Equation_Group.rar"
+  },
+  {
+    "name": "FIN4",
+    "logo": "logo",
+    "TTP": "https://attack.mitre.org/groups/G0085/",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "APT-32",
+    "logo": "logo",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "Papers",
+    "Sample": "Sample"
+  },
+  {
+    "name": "APT-24",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-24.png",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT_24-Pitty_Panda.pdf",
+    "Sample": "Smaple"
+  },
+  {
+    "name": "APT-31",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-31.png",
+    "TTP": "TTP",
+    "News": "News",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT31-Zirconium.pdf",
+    "Sample": "Smaple"
   }
 ]
