@@ -313,15 +313,15 @@
   },
   {
     "name": "DarkHydrus",
-    "logo": "logo",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/dark_hydrus.png",
     "TTP": "https://attack.mitre.org/groups/G0079/",
     "News": "News",
     "Papers": "Papers",
-    "Sample": "Sample"
+    "Sample": "Not Found"
   },
   {
     "name": "DarkVishnya",
-    "logo": "logo",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/deep_vishnya.png",
     "TTP": "https://attack.mitre.org/groups/G0105/",
     "News": "News",
     "Papers": "Papers",
@@ -385,7 +385,7 @@
   },
   {
     "name": "Cobalt Group",
-    "logo": "logo",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/cobalt_strike.png",
     "TTP": "https://attack.mitre.org/groups/G0080/",
     "News": "https://cse.google.com/cse?cx=49730db81a2911993",
     "Papers": "https://ax1al.com/projects/hawkbase/APT/report/COBALT_GROUP.pdf",
@@ -497,7 +497,7 @@
   },
   {
     "name": "Stolen Pencil",
-    "logo": "https://ax1al.com/projects/hawkbase/APT/card/stolen_pencil",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/stolen_pencil.png",
     "TTP": "https://attack.mitre.org/groups/G0086/",
     "News": "https://cse.google.com/cse?cx=c039b0be7d31fd89a",
     "Papers": "Papers",
@@ -665,7 +665,7 @@
   },
   {
     "name": "NEODYMIUM",
-    "logo": "https://ax1al.com/projects/hawkbase/APT/card/neodymium.png",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/NEODYMIUM.png",
     "TTP": "https://attack.mitre.org/groups/G0055/",
     "News": "https://cse.google.com/cse?cx=89c864e385b4ece59",
     "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Neodymium.pdf",
@@ -681,15 +681,15 @@
   },
   {
     "name": "Stealth Falcon",
-    "logo": "https://ax1al.com/projects/hawkbase/APT/card/sleath_falcon.png",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/stealth_falcon.png",
     "TTP": "https://attack.mitre.org/groups/G0038/",
     "News": "https://cse.google.com/cse?cx=89c864e385b4ece59",
     "Papers": "Papers",
     "Sample": "Not Found"
   },
   {
-    "name": "Carbanak/FIN7",
-    "logo": "logo",
+    "name": "Carbanak",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/carbanak.png",
     "TTP": "https://attack.mitre.org/groups/G0046/",
     "News": "News",
     "Papers": "Papers",
@@ -745,11 +745,11 @@
   },
   {
     "name": "Bouncing Golf",
-    "logo": "logo",
+    "logo": "https://ax1al.com/projects/hawkbase/APT/card/bouncing_golf.png",
     "TTP": "https://attack.mitre.org/groups/G0097/",
     "News": "News",
-    "Papers": "Papers",
-    "Sample": "Sample"
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/bouncing_golf_.pdf",
+    "Sample": "Not Found"
   },
   {
     "name": "Strider",
