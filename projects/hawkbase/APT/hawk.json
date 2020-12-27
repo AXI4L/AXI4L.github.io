@@ -36,7 +36,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-18.png",
     "TTP": "https://attack.mitre.org/groups/G0026/",
     "News": "https://cse.google.com/cse?cx=6b80a3dd30e04beef",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT-18.pdf",
     "Sample": "Not Found"
   },
   {
@@ -75,9 +75,9 @@
     "name": "Axiom/APT17",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/axiom.png",
     "TTP": "https://attack.mitre.org/groups/G0001/",
-    "News": "News",
-    "Papers": "Papers",
-    "Sample": "Sample"
+    "News": "https://cse.google.com/cse?cx=f38951884ce251117",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/AXIOM.pdf",
+    "Sample": "Not Found"
   },
   {
     "name": "Black Tech",
@@ -276,7 +276,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/ta-459.png",
     "TTP": "https://attack.mitre.org/groups/G0062/",
     "News": "https://cse.google.com/cse?cx=497ffe67baff1bd80",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/TA459.pdf",
     "Sample": "Not Found"
   },
   {
@@ -320,14 +320,6 @@
     "Sample": "Not Found"
   },
   {
-    "name": "DarkVishnya",
-    "logo": "https://ax1al.com/projects/hawkbase/APT/card/deep_vishnya.png",
-    "TTP": "https://attack.mitre.org/groups/G0105/",
-    "News": "News",
-    "Papers": "Papers",
-    "Sample": "Sample"
-  },
-  {
     "name": "Honeybee",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/honeybee.png",
     "TTP": "https://attack.mitre.org/groups/G0072/",
@@ -364,7 +356,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/39-apt.png",
     "TTP": "https://attack.mitre.org/groups/G0087/",
     "News": "https://cse.google.com/cse?cx=c2f965c239b90c1a7",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT39-RemixKitten.pdf",
     "Sample": "Not Found"
   },
   {
@@ -412,7 +404,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/leafminer.png",
     "TTP": "https://attack.mitre.org/groups/G0077/",
     "News": "https://cse.google.com/cse?cx=4d6b3417026d4aaac",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Leafminer.pdf",
     "Sample": "Not Found"
   },
   {
@@ -484,7 +476,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/kimsuky.png",
     "TTP": "https://attack.mitre.org/groups/G0094/",
     "News": "https://cse.google.com/cse?cx=c039b0be7d31fd89a",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Kimsuky.pdf",
     "Sample": "Not Found"
   },
   {
@@ -492,7 +484,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/sharpshooter.png",
     "TTP": "https://attack.mitre.org/groups/G0104/",
     "News": " https://cse.google.com/cse?cx=c039b0be7d31fd89a",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Operation-Sharpshooter.pdf",
     "Sample": "Not Found"
   },
   {
@@ -500,7 +492,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/stolen_pencil.png",
     "TTP": "https://attack.mitre.org/groups/G0086/",
     "News": "https://cse.google.com/cse?cx=c039b0be7d31fd89a",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Operation-StolenPencil.pdf",
     "Sample": "Not Found"
   },
   {
@@ -508,7 +500,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-37.png",
     "TTP": "https://attack.mitre.org/groups/G0067/",
     "News": "https://cse.google.com/cse?cx=751cffaa347fe5c04",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT37-RicochetChollima.pdf",
     "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/415054333746696E616C317374737079.rar"
   },
   {
@@ -516,7 +508,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-38.png",
     "TTP": "https://attack.mitre.org/groups/G0082/",
     "News": "https://cse.google.com/cse?cx=dd6b37c34536c9e42",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT38-StardustChollima.pdf",
     "Sample": "Not Found"
   },
   {
@@ -692,7 +684,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/carbanak.png",
     "TTP": "https://attack.mitre.org/groups/G0046/",
     "News": "News",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/CARBANAK.pdf",
     "Sample": "Sample"
   },
   {
