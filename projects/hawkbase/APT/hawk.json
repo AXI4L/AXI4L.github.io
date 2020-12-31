@@ -26,8 +26,8 @@
   {
     "name": "APT-22",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/suckfly.png",
-    "TTP": "TTP",
-    "News": "News",
+    "TTP": "https://attack.mitre.org/groups/G0039/",
+    "News": "https://cse.google.com/cse?cx=497ffe67baff1bd80",
     "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT22-Suckfly.pdf",
     "Sample": "Sample"
   },
@@ -106,8 +106,8 @@
   {
     "name": "Leviathan/APT-40",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-40.png",
-    "TTP": "TTP",
-    "News": "News",
+    "TTP": "https://attack.mitre.org/groups/G0065/",
+    "News": "https://cse.google.com/cse?cx=50219399702d87326",
     "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT40-Leviathan.pdf",
     "Sample": "Sample"
   },
@@ -146,8 +146,8 @@
   {
     "name": "Ke3chang/APT-15",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-15.png",
-    "TTP": "TTP",
-    "News": "News",
+    "TTP": "https://attack.mitre.org/groups/G0004/",
+    "News": "https://cse.google.com/cse?cx=e06be38bcd5fdcdfa",
     "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT15-Chan.pdf",
     "Sample": "Sample"
   },
@@ -155,7 +155,7 @@
     "name": "Orangeworm",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/orangeworm.png",
     "TTP": "https://attack.mitre.org/groups/G0071/",
-    "News": "News",
+    "News": "https://cse.google.com/cse?cx=e9bd6cdb9b2e73b67",
     "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Orangeworm.pdf",
     "Sample": "Sample"
   },
@@ -187,7 +187,7 @@
     "name": "Magic Hound/APT-35",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-35.png",
     "TTP": "https://attack.mitre.org/groups/G0058/",
-    "News": "News",
+    "News": "https://cse.google.com/cse?cx=03e914697356fba10",
     "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT-35OR_MAGICHOUND.pdf",
     "Sample": "Sample"
   },
@@ -284,8 +284,8 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/Transparent_Tribe.png",
     "TTP": "TTP",
     "News": "News",
-    "Papers" :"Papers",
-    "Sample" : "Sample"
+    "Papers" :"https://ax1al.com/projects/hawkbase/APT/report/Transparent_Tribe.pdf",
+    "Sample" : "https://ax1al.com/projects/hawkbase/APT/samples/TransparentTribe.rar"
   },
   {
     "name": "FIN4",
@@ -388,7 +388,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/stealth_falcon.png",
     "TTP": "https://attack.mitre.org/groups/G0038/",
     "News": "https://cse.google.com/cse?cx=89c864e385b4ece59",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/StealthFalcon.pdf",
     "Sample": "Sample"
   },
   {
@@ -491,7 +491,7 @@
     "name": "menuPass/APT-10",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-10.png",
     "TTP": "https://attack.mitre.org/groups/G0045/",
-    "News": "News",
+    "News": "https://cse.google.com/cse?cx=4dc06f4862b9e8166",
     "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT10ORMENUPASS.pdf",
     "Sample": "Sample"
   },
@@ -507,7 +507,7 @@
     "name": "APT-21",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-21.png",
     "TTP": "TTP",
-    "News": "News",
+    "News": "https://cse.google.com/cse?cx=c8505a70377eaedfa",
     "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT-21HammerPanda.pdf",
     "Sample": "Sample"
   },
@@ -547,7 +547,7 @@
     "name": "APT-31",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-31.png",
     "TTP": "TTP",
-    "News": "News",
+    "News": "https://cse.google.com/cse?cx=6328c29a4cfe4147c",
     "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT31-Zirconium.pdf",
     "Sample": "Sample"
   },
@@ -691,7 +691,7 @@
     "name": "APT-24",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-24.png",
     "TTP": "TTP",
-    "News": "News",
+    "News": "https://cse.google.com/cse?cx=48592ebc5dda08a54",
     "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT_24-Pitty_Panda.pdf",
     "Sample": "Sample"
   },
@@ -763,7 +763,7 @@
     "name": "APT-20",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-20.png",
     "TTP": "TTP",
-    "News": "News",
+    "News": "https://cse.google.com/cse?cx=8461d38fc6e9ea4b5",
     "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT20-ViolentPanda.pdf",
     "Sample": "Sample"
   },
@@ -795,7 +795,7 @@
     "name": "FIN7",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/fin_7.png",
     "TTP": "https://attack.mitre.org/groups/G0046/",
-    "News": "https://cse.google.com/cse?cx=08e9d43c50afd01e",
+    "News": "https://cse.google.com/cse?cx=08e9d43c50afd01e6",
     "Papers": "https://ax1al.com/projects/hawkbase/APT/report/FIN_7.pdf",
     "Sample": "Sample"
   }
