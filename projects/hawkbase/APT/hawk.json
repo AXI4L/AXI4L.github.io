@@ -244,7 +244,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/fin_6.png",
     "TTP": "https://attack.mitre.org/groups/G0037/",
     "News": "https://cse.google.com/cse?cx=75150d1694e73c001",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/FIN_6.pdf",
     "Sample": "Sample"
   },
   {
@@ -284,7 +284,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/fin_4.png",
     "TTP": "https://attack.mitre.org/groups/G0085/",
     "News": "https://cse.google.com/cse?cx=01145852737774782",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/FIN4.pdf",
     "Sample": "Sample"
   },
   {
@@ -292,7 +292,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-28.png",
     "TTP": "https://attack.mitre.org/groups/G0007/",
     "News": "https://cse.google.com/cse?cx=50219399702d87326",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT-28.pdf",
     "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/APT28.zip"
   },
   {
@@ -300,7 +300,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/rtm.png",
     "TTP": "https://attack.mitre.org/groups/G0048/",
     "News": "https://cse.google.com/cse?cx=e22125311cce37a7",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/RTM.pdf",
     "Sample": "Sample"
   },
   {
@@ -308,7 +308,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt-29.png",
     "TTP": "https://attack.mitre.org/groups/G0016/",
     "News": "https://cse.google.com/cse?cx=50219399702d87326",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT-29.pdf",
     "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/CozyBearAPT29.rar"
   },
   {
@@ -316,7 +316,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/sandworm.png",
     "TTP": "https://attack.mitre.org/groups/G0034/",
     "News": "https://cse.google.com/cse?cx=e22125311cce37a75",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Sandworm.pdf",
     "Sample": "Sample"
   },
   {
@@ -348,7 +348,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/ta-505.png",
     "TTP": "https://attack.mitre.org/groups/G0092/",
     "News": "https://cse.google.com/cse?cx=e22125311cce37a75",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/TA505.pdf",
     "Sample": "Sample"
   },
   {
@@ -356,7 +356,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/fin_10.png",
     "TTP": "https://attack.mitre.org/groups/G0051/",
     "News": "https://cse.google.com/cse?cx=23dde9a6a0c1d7e0",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/FIN-10.pdf",
     "Sample": "Sample"
   },
   {
@@ -388,7 +388,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/apt_c-36.png",
     "TTP": "https://attack.mitre.org/groups/G0099/",
     "News": "https://cse.google.com/cse?cx=186bb2f5023c44343",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/APT_C-36.pdf",
     "Sample": "Sample"
   },
   {
@@ -412,7 +412,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/fin_5.png",
     "TTP": "https://attack.mitre.org/groups/G0053/",
     "News": "https://cse.google.com/cse?cx=81a6d50d6b07083d0",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/fin5.pdf",
     "Sample": "Sample"
   },
   {
@@ -428,7 +428,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/gallmaker.png",
     "TTP": "https://attack.mitre.org/groups/G0084/",
     "News": "https://cse.google.com/cse?cx=4d98cb1664a9fae6",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Gallmaker.pdf",
     "Sample": "Sample"
   },
   {
@@ -444,7 +444,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/fin_8.png",
     "TTP": "https://attack.mitre.org/groups/G0061/",
     "News": "https://cse.google.com/cse?cx=375fb021e98828ecb",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/FIN_8.pdf",
     "Sample": "Sample"
   },
   {
@@ -588,7 +588,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/gamaredon_group.png",
     "TTP": "https://attack.mitre.org/groups/G0047/",
     "News": "https://cse.google.com/cse?cx=e85bc0bf970a08fa9",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Gamaredon_Group.pdf",
     "Sample": "Sample"
   },
   {
@@ -628,7 +628,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/platinum.png",
     "TTP": "https://attack.mitre.org/groups/G0068/",
     "News": "https://cse.google.com/cse?cx=89c864e385b4ece59",
-    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Platinum.pdf",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Platinum_2.pdf",
     "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/PlatinumGroup.rar"
   },
   {
@@ -692,7 +692,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/group_5.png",
     "TTP": "https://attack.mitre.org/groups/G0043/",
     "News": "https://cse.google.com/cse?cx=c3bed529da3d3b155",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Group5.pdf",
     "Sample": "Sample"
   },
   {
@@ -700,7 +700,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/gold_southfield.png",
     "TTP": "https://attack.mitre.org/groups/G0115/",
     "News": "https://cse.google.com/cse?cx=2dfcd39e349a8161",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Gold_Southfield.pdf",
     "Sample": "Sample"
   },
   {
@@ -772,7 +772,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/inception.png",
     "TTP": "https://attack.mitre.org/groups/G0100/",
     "News": "https://cse.google.com/cse?cx=131abaf2a5f34dc0b",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Inception_framework.pdf",
     "Sample": "Sample"
   },
   {
@@ -788,7 +788,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/fin_7.png",
     "TTP": "https://attack.mitre.org/groups/G0046/",
     "News": "https://cse.google.com/cse?cx=08e9d43c50afd01e",
-    "Papers": "Papers",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/FIN_7.pdf",
     "Sample": "Sample"
   }
 ]
