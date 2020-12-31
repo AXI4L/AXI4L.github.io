@@ -172,7 +172,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/patchwork.png",
     "TTP": "https://attack.mitre.org/groups/G0040/",
     "News": "https://cse.google.com/cse?cx=89c864e385b4ece5",
-    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/PatchWork.pdf",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/Patchwork.pdf",
     "Sample": "Sample"
   },
   {
@@ -220,7 +220,7 @@
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/oil_rig.png",
     "TTP": "https://attack.mitre.org/groups/G0049/",
     "News": "https://cse.google.com/cse?cx=4d6b3417026d4aaac",
-    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/OilRig.pdf",
+    "Papers": "https://ax1al.com/projects/hawkbase/APT/report/OILRIG_APT-34.pdf",
     "Sample": "https://ax1al.com/projects/hawkbase/APT/samples/APT34.rar"
   },
   {
@@ -283,7 +283,7 @@
     "name": "Transparent Tribe",
     "logo": "https://ax1al.com/projects/hawkbase/APT/card/Transparent_Tribe.png",
     "TTP": "TTP",
-    "News": "News",
+    "News": "https://cse.google.com/cse?cx=4dcaad3800a4e1edd",
     "Papers" :"https://ax1al.com/projects/hawkbase/APT/report/Transparent_Tribe.pdf",
     "Sample" : "https://ax1al.com/projects/hawkbase/APT/samples/TransparentTribe.rar"
   },
