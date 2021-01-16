@@ -804,16 +804,8 @@
   	"logo":"https://ax1al.com/projects/hawkbase/APT/card/UNC2452.png",
   	"TTP":"TTP",
   	"News":"https://cse.google.com/cse?cx=2b173e2956bbb2b41",
-  	"Papers":"Papers",
-  	"Sample":"Sample"
-  },
-  {
-  	"name":"Solarstorm",
-  	"logo":"https://ax1al.com/projects/hawkbase/APT/card/Solar_storm.png",
-  	"TTP":"TTP",
-  	"News":"News",
-  	"Papers":"Papers",
-  	"Sample":"Sample"
+  	"Papers":"https://ax1al.com/projects/hawkbase/APT/report/Dark_Halo.pdf",
+  	"Sample":"https://ax1al.com/projects/hawkbase/APT/samples/Sandworm_Team.zip"
   },
   {
   	"name":"Confucius",
@@ -837,14 +829,6 @@
   	"TTP":"TTP",
   	"News":"https://cse.google.com/cse?cx=0b3b167a96a57cd0f",
   	"Papers":"https://ax1al.com/projects/hawkbase/APT/report/SideWinder.pdf",
-  	"Sample":"Sample"
-  },
-  {
-  	"name":"Dark Halo",
-  	"logo":"logo",
-  	"TTP":"TTP",
-  	"News":"News",
-  	"Papers":"https://ax1al.com/projects/hawkbase/APT/report/Dark_Halo.pdf",
   	"Sample":"Sample"
   }
 ]
