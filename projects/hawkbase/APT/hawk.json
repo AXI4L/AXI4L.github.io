@@ -830,5 +830,45 @@
   	"News":"https://cse.google.com/cse?cx=0b3b167a96a57cd0f",
   	"Papers":"https://ax1al.com/projects/hawkbase/APT/report/SideWinder.pdf",
   	"Sample":"Sample"
+  },
+  {
+    "name":"Slayer Kitten",
+    "logo":"https://ax1al.com/projects/hawkbase/APT/card/slayer_kitten.png",
+    "TTP":"TTP",
+    "News":"https://cse.google.com/cse?cx=04e5c2d5438b1bac5",
+    "Papers":"https://ax1al.com/projects/hawkbase/APT/report/SlayerKitten.pdf",
+    "Sample":"Sample"
+  },
+  {
+    "name":"Cadelle",
+    "logo":"https://ax1al.com/projects/hawkbase/APT/card/cadelle.png",
+    "TTP":"TTP",
+    "News":"https://cse.google.com/cse?cx=e283ba12cc3f2194b",
+    "Papers":"https://ax1al.com/projects/hawkbase/APT/report/Cadalle.pdf",
+    "Sample":"Sample"
+  },
+  {
+    "name":"Dark Basin",
+    "logo":"https://ax1al.com/projects/hawkbase/APT/card/dark_basin.png",
+    "TTP":"TTP",
+    "News":"https://cse.google.com/cse?cx=3a943e81c8a69da50",
+    "Papers":"https://ax1al.com/projects/hawkbase/APT/report/dark_basin.pdf",
+    "Sample":"Sample"
+  },
+  {
+    "name":"APT C-07",
+    "logo":"https://ax1al.com/projects/hawkbase/APT/card/apt_c-07.png",
+    "TTP":"TTP",
+    "News":"https://cse.google.com/cse?cx=17c8ceac9cfcdf90f",
+    "Papers":"https://ax1al.com/projects/hawkbase/APT/report/APT_C-07.pdf",
+    "Sample":"Sample"
+  },
+  {
+    "name":"TG2889",
+    "logo":"https://ax1al.com/projects/hawkbase/APT/card/TG2889.png",
+    "TTP":"https://attack.mitre.org/groups/G0003/",
+    "News":"https://cse.google.com/cse?cx=c20beb4d47b3a60f7",
+    "Papers":"https://ax1al.com/projects/hawkbase/APT/report/TG-2889.pdf",
+    "Sample":"Sample"
   }
 ]
