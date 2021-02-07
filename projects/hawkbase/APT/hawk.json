@@ -830,5 +830,45 @@
   	"News":"https://cse.google.com/cse?cx=0b3b167a96a57cd0f",
   	"Papers":"https://ax1al.com/projects/hawkbase/APT/report/SideWinder.pdf",
   	"Sample":"Sample"
+  },
+  {
+    "name":"Onion Dog",
+    "logo":"https://ax1al.com/projects/hawkbase/APT/card/Onion_Dog.png",
+    "TTP":"TTP",
+    "News":"https://cse.google.com/cse?cx=c1ec4b502b491d110",
+    "Papers":"https://ax1al.com/projects/hawkbase/APT/report/Onion_Dog.pdf",
+    "Sample":"Sample"
+  },
+  {
+    "name":"OurMine",
+    "logo":"https://ax1al.com/projects/hawkbase/APT/card/Our_Mine.png",
+    "TTP":"TTP",
+    "News":"https://cse.google.com/cse?cx=c1ec4b502b491d110",
+    "Papers":"https://ax1al.com/projects/hawkbase/APT/report/OurMine.pdf",
+    "Sample":"Sample"
+  },
+  {
+    "name":"Sandcat",
+    "logo":"https://ax1al.com/projects/hawkbase/APT/card/sandcat.png",
+    "TTP":"TTP",
+    "News":"https://cse.google.com/cse?cx=c1ec4b502b491d110",
+    "Papers":"https://ax1al.com/projects/hawkbase/APT/report/Sandcat.pdf",
+    "Sample":"Sample"
+  },
+  {
+    "name":"GCHQ",
+    "logo":"https://ax1al.com/projects/hawkbase/APT/card/GCHQ.png",
+    "TTP":"TTP",
+    "News":"https://cse.google.com/cse?cx=c1ec4b502b491d110",
+    "Papers":"https://ax1al.com/projects/hawkbase/APT/report/GCHQ.pdf",
+    "Sample":"Sample"
+  },
+  {
+    "name":"Sea Turtle",
+    "logo":"https://ax1al.com/projects/hawkbase/APT/card/sea_turtle.png",
+    "TTP":"TTP",
+    "News":"https://cse.google.com/cse?cx=c1ec4b502b491d110",
+    "Papers":"https://ax1al.com/projects/hawkbase/APT/report/Sea_Turtle.pdf",
+    "Sample":"Sample"
   }
 ]
