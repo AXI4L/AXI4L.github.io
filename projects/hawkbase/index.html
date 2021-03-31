@@ -276,23 +276,24 @@
         $('#model').on('shown.bs.modal', function (event) {
             document.getElementById("card-img").setAttribute("src",$(event.relatedTarget).data('img'));
         })
-
-        $.ajax({
-            url: "https://hawkbase.herokuapp.com/APT/hawk.json",
-            type: "GET",
-            crossDomain: true,
-            headers: {
-              "Access-Control-Allow-Origin":"https://ax1al.com",
-              "Access-Control-Allow-Credentials": false,
-              "Access-Control-Allow-Headers": "Origin",
-              "Access-Control-Allow-Methods": "GET",
-              "Origin": "http://ax1al.com",
-              "accept": "application/json",
-          	},
-          	xhrFields: {
-	        	withCredentials: false
-		    },
-            success: function (data) {
+        fetch("https://cors.bridged.cc/https://hawkbase.herokuapp.com/APT/hawk.json", {
+		  "headers": {
+		    "accept": "application/json, text/plain, */*",
+		    "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+		    "cache-control": "no-cache",
+		    "pragma": "no-cache",
+		    "sec-fetch-dest": "empty",
+		    "sec-fetch-mode": "cors",
+		    "sec-fetch-site": "same-site",
+		    "sec-gpc": "1"
+		  },
+		  "referrer": "https://ax1al.com",
+		  "referrerPolicy": "strict-origin-when-cross-origin",
+		  "method": "GET",
+		  "mode": "cors",
+		  "credentials": "omit"
+		}).then(function(response){
+        	var data = response.json();
 				var tableref = document.getElementById("apt_group").getElementsByTagName('tbody')[0];
 				var i=0;
 
