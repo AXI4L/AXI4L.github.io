@@ -1,4 +1,9 @@
 
+$(document).ready(function () {
+    $('#rez_search').tooltip({'trigger':'focus', 'title': 'Name is Required Field'});
+	$('#ddg').tooltip({'trigger':'focus', 'title': 'Name is Required Field'});    $('#password').tooltip({'trigger':'focus', 'title': 'Password is Required Field'});
+});
+
 var flag=false;
 $("#rez_search").on('keydown', function() {
     if($("#arch").val() == "Select the Architecture" && flag==false){
