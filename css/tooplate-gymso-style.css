@@ -374,6 +374,18 @@
     z-index: 0;
   }
 
+  .hero1 {
+    background-image: url('https://i.pinimg.com/originals/5f/08/58/5f085809f2b711643e4eb4974cc03c0e.gif');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    vertical-align: middle;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+  }
+
 
   /*---------------------------------------
      CLASS               
@@ -853,4 +865,8 @@
   color: var(--dark-color);
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+#search_name {
+  color: #66d9ef;
 }

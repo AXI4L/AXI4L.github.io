@@ -1,0 +1,457 @@
+[
+  {
+    "Mnemonic": "ECALL",
+    "Definition": "Used for making a request to the supporting execution environment",
+    "Syntax": "ecall",
+    "Examples": "",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "EBREAK",
+    "Definition": "Used by debuggers to cause control to be transferred back to a debugging environment.",
+    "Syntax": "ebreak",
+    "Examples": "",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "WFI",
+    "Definition": "Provides a hint to the implementation that the current hart can be stalled until an interrupt might need servicing.",
+    "Syntax": "wfi",
+    "Examples": "",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "ADDIW",
+    "Definition": "Adds the sign-extended 12-bit immediate to register rs1 and produces the proper sign-extension of 32-bit result in rd.",
+    "Syntax": "",
+    "Examples": "",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "MV",
+    "Definition": "This instruction is a simple “Copy Register”, assembler pseudo-instruction which copies the contents of one register to another register",
+    "Syntax": "mv rd, rs",
+    "Examples": "mv x7, x6",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "ADDW( 64-bit)",
+    "Definition": "Similar to ADD instruction but operate on 32-bit values and produces 32-bit value.",
+    "Syntax": "addw rd, rs1, rs2",
+    "Examples": "addw x7, x8, x12",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SUBW",
+    "Definition": "Similar to SUB instruction just produces 32-bit result.",
+    "Syntax": "subw rd, rs1, rs2",
+    "Examples": "subw x3,",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "LD",
+    "Definition": "Loads a 64-bit value from memory into register rd for RC64I",
+    "Syntax": "",
+    "Examples": "",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "LI",
+    "Definition": "This instruction loads a register with the immediate value given.",
+    "Syntax": "li rd, constant",
+    "Examples": "li x6, -180",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "NEG",
+    "Definition": "This instruction computes two's complement of a value",
+    "Syntax": "neg rd, rs1",
+    "Examples": "neg x8, x6",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "AMO",
+    "Definition": "Perform read-modify-write operations for mul-tiprocessor synchronization and are encoded with an R-type instruction format",
+    "Syntax": "",
+    "Examples": "",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "FMV .X.D",
+    "Definition": "Moves the double-precision value in floating-point registerrs1to a representation in IEEE 754-2008 standard encoding in integer register rd,",
+    "Syntax": "",
+    "Examples": "",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "FMV .D.X",
+    "Definition": "Moves the double-precision value encoded in IEEE 754-2008 standard encoding from the integer registerrs1to the floating-point register rd.",
+    "Syntax": "",
+    "Examples": "",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "FCMP",
+    "Definition": "",
+    "Syntax": "",
+    "Examples": "",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "LB",
+    "Definition": "Moves a byte from memory to register.",
+    "Syntax": "lb rd, imm(rs1)",
+    "Examples": "lb x4, 69(x3)",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "LBU",
+    "Definition": "Moves a byte from memory to register used for unsigned integers.",
+    "Syntax": "lbu rd, imm(rs1)",
+    "Examples": "lbu x4, 39(x5)",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "LH",
+    "Definition": "Loads a half-word from memory to register.",
+    "Syntax": "lh rd, imm(rs1)",
+    "Examples": "lh x4, 1(x5)",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "LHU",
+    "Definition": "Loads a half word from memory to register used for unsigned numbers",
+    "Syntax": "lhu rd, imm(rs1)",
+    "Examples": "lhu x3, 2(x4)",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "LW",
+    "Definition": "Moves a word from memory to register",
+    "Syntax": "lw rd, imm(rs1)",
+    "Examples": "lw x4, 39(x4)",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SB",
+    "Definition": "Moves an 8 bit value from a register to memory.",
+    "Syntax": "sb rs2, offset(rs1)",
+    "Examples": "sb x2, 0(x4)",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SH",
+    "Definition": "Moves an 16-bit value from a register to memory.",
+    "Syntax": "sh rs2, offset(rs1)",
+    "Examples": "sh x2, 0(x3)",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SW",
+    "Definition": "Moves an 32-bit value from a register to memory",
+    "Syntax": "sw rs2, offset(rs1)",
+    "Examples": "sw x4, 6(x5)",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "LUI",
+    "Definition": "This instruction copies the 20-bit immediate value to the upper 20 bits of the designation register and resets the lower 12 bits to zero.",
+    "Syntax": "lui rd, imm",
+    "Examples": "lui x4, 0x12000",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "AUIPC",
+    "Definition": "This instruction adds the 20-bit immediate value to the upper 20 bits of the program counter and stores the result inside the destination register",
+    "Syntax": "auipc rd, imm",
+    "Examples": "auipc x4, 0x12000",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SLL",
+    "Definition": "This instruction performs logical left on the value in first source register by the amount held in second source register and stores inside destination register.",
+    "Syntax": "sll rd, rs1, rs2",
+    "Examples": "sll x1, x4, x2",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SRL",
+    "Definition": "This instruction performs logical right on the value in the register by the shift amount inside the second source register and stores it inside the destination register.",
+    "Syntax": "srl rd, rs1, rs2",
+    "Examples": "srl x1, x4, x2",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SRA",
+    "Definition": "This instruction performs right shift in the value in the first source register by the shift amount stored inside the second shift register and stores inside the destination register.",
+    "Syntax": "sra rd, rs1, rs2",
+    "Examples": "sra x2, x4, x5",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "OR",
+    "Definition": "This instruction performs bit-wise logical OR operation between contents of first and second source register and stores the value inside the destination register.",
+    "Syntax": "or rd, rs1, rs2",
+    "Examples": "or x2, x4, x5",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "XOR",
+    "Definition": "This instruction performs bit-wise binary exclusive OR operation on both of the source registers and stores inside the destination register.",
+    "Syntax": "xor rd, rs1, rs2",
+    "Examples": "xor x2, x4, x5",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "NOT",
+    "Definition": "This instruction performs a one's complement arithmetic.",
+    "Syntax": "not rd, rs1",
+    "Examples": "not x4, x5",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SLT",
+    "Definition": "This instruction performs the signed and unsigned comparison between both source registers and stores the value inside the destination registers also writes 1 to rd if first source operand is smaller than second source operand.",
+    "Syntax": "slt rd, rs1, rs2",
+    "Examples": "slt x2, x6, x7",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SLTU",
+    "Definition": "This instruction performs the signed and unsigned comparison between both source registers and stores the value inside the destination registers, this instruction also sets the destination register to one if the second source register is not equal to zero otherwise it sets the destination register to zero",
+    "Syntax": "sltu rd, rs1, rs2",
+    "Examples": "sltu x2, x4, x5",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SLLI",
+    "Definition": "This instruction performs logical left on the value in register by the shift amount held inside the register(immediate) and stores the result inside the destination register.",
+    "Syntax": "slli rd, rs1, imm",
+    "Examples": "slli x2, x2, 1",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SRLI",
+    "Definition": "This instruction performs logical right on the value in the first source register by the shift of amount stored inside the immediate register and stores inside the destination register.",
+    "Syntax": "srli rd, rs1, imm",
+    "Examples": "srli x2, x2, 1",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SRAI",
+    "Definition": "This instruction performs right shift on the value in first source by the shift amount held in  the immediate register and stores the value in destination register.",
+    "Syntax": "srai rd, rs1, imm",
+    "Examples": "srai x1, x1, 2",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "ANDI",
+    "Definition": "This instruction performs binary operation between contents of register and immediate data and stores inside the destination register.",
+    "Syntax": "andi rd, rs1, imm",
+    "Examples": "andi x4, x4, 2",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "ORI",
+    "Definition": "This instruction performs binary operation between registers and immediate value and stores the value in the destination register.",
+    "Syntax": "ori rd, rs1, imm",
+    "Examples": "ori x2, x3, 0x0020",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "XORI",
+    "Definition": "This instruction performs bit-wise binary operation between source register and immediate data and stores the value inside immediate register.",
+    "Syntax": "xori rd, rs1, imm",
+    "Examples": "xori x6, x6, 0b100000",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SLTI",
+    "Definition": "This instruction compares contents between source register and the immediate value and stores the value inside the destination register.",
+    "Syntax": "slti rd, rs1, imm",
+    "Examples": "slti x5, x1, 3",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SLTIU",
+    "Definition": "This instruction performs comparison between contents of source register and immediate data using unsigned comparison.",
+    "Syntax": "sltiu rd, rs1, imm",
+    "Examples": "sltiu x5, x3, 2",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "ADD",
+    "Definition": "This instruction adds the contents of two source registers and stores inside the other destination register.",
+    "Syntax": "add rd, rs1, rs2",
+    "Examples": "add x2, x3, x4",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SUB",
+    "Definition": "This instruction performs subtraction between the contents of one register from another and stores the result inside the destination register.",
+    "Syntax": "sub rd, rs1, rs2",
+    "Examples": "sub x2, x3, x4",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "MUL",
+    "Definition": "This instruction performs multiplication products of two XLEN-bit operands in the both source register and stores the less significant part of the result in the destination register and ignores the overflow.",
+    "Syntax": "mul rd, rs1, rs2",
+    "Examples": "mul x5, x6, x12",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "MULH",
+    "Definition": "This instruction performs product of signed values in both of the source register and stores the result in the destination register.",
+    "Syntax": "mulh rd, rs1, rs2",
+    "Examples": "mulh x5, x5, x2",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "MULHU",
+    "Definition": "This instruction performs the product of two unsigned values in source registers rs1 and rs2, and the result is stored inside the destination registers.",
+    "Syntax": "mulhu rd, rs1, rs2",
+    "Examples": "mulhu x4, x4, 2",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "MULHSU",
+    "Definition": "This instruction calculates the product of a signed value in source register and with an unsigned value in the second source register with an",
+    "Syntax": "mulhsu rd, rs1, rs2",
+    "Examples": "mulhsu x5, x5, x1",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "DIV",
+    "Definition": "This instruction performs division on the value in the first source register with the value of the other source register and stores the quotient inside the destination register.",
+    "Syntax": "div rd, rs1, rs2",
+    "Examples": "div x4, x8, x12",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "DIVU",
+    "Definition": "This instruction performs unsigned division on the value in the source register and by the value stored inside the second source register and stores the value inside the destination register.",
+    "Syntax": "divu rd, rs1, rs2",
+    "Examples": "divu x5, x9, x12",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "REM",
+    "Definition": "This instruction stores reminder on the destination register.",
+    "Syntax": "rem rd, rs1, rs2",
+    "Examples": "rem x6, x8, x12",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "LI",
+    "Definition": "This instruction loads register with immediate value.",
+    "Syntax": "li rd, imm",
+    "Examples": "li x6, 56",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "BEQ",
+    "Definition": "This instruction compares the contents of the source register and the destination register and if they are found equal the control is passed ahead.",
+    "Syntax": "beq rs1, rs2, label",
+    "Examples": "beq x2, x3, continue \n\n#compares both the contents registers if found equal jumps to continue named label.",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "BNE",
+    "Definition": "This instruction compares contents of the both source registers and if they are not equal it jumps to a label.",
+    "Syntax": "bne rs1, rs2, label",
+    "Examples": "bne x7, x8, continue\n\n#compares both the contents registers if found not equal jumps to continue named label.",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "BLT",
+    "Definition": "This instruction compares the contents of both the source registers if the first register is less than the second register the control is passed to the second register.",
+    "Syntax": "blt rs1, rs2, label",
+    "Examples": "blt x6, x8, continue",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "BLTU",
+    "Definition": "This instruction compares contents of (rs1) is compared with the contents of (rs2). If (rs1)contents is less than (rs2), (unsigned comparison) control jumps",
+    "Syntax": "bltu rs1, rs2, label",
+    "Examples": "bltu x2, x5, notcontinue",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "BGE",
+    "Definition": "This instructions compares the contents of the source registers and if the first source register is greater than the second, the control is passed to a target address.",
+    "Syntax": "bge rs1, rs2, address",
+    "Examples": "bge x4, x9, *address",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "BGEU",
+    "Definition": "This instruction compares contents of (rs1) is compared with the contents of (rs2). If (rs1)contents is greater than (rs2), (unsigned comparison) control jumps.",
+    "Syntax": "bgeu rs1, rs2, label",
+    "Examples": "bgeu x5, x9, label",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "LD",
+    "Definition": "This instruction loads double word",
+    "Syntax": "ld rd, rs1",
+    "Examples": "ld x6, 1337(x8)",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SD",
+    "Definition": "This instruction loads 64-bit value from one source register to the memory.",
+    "Syntax": "sd rs2, offset(rs1)",
+    "Examples": "sd x5, 1337(x8)",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "LWU",
+    "Definition": "This instructions does the fetching of 32-bit value from memory and loads into a destination register.",
+    "Syntax": "lwu rd, offset(rs1)",
+    "Examples": "lwu x6, 1337(x8)",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SLLW",
+    "Definition": "This instruction performs logical left on the value in register by the shift amount held in the register and stores inside the destination register.",
+    "Syntax": "sllw rd, rs1, rs2",
+    "Examples": "sllw x2, x4, x5",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SRLW",
+    "Definition": "This instruction performs logical right on the value in the register by the shift amount held inside the second register and stores inside the destination register.",
+    "Syntax": "srlw rd, rs1, rs2",
+    "Examples": "srlw x2, x2, x4",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SRAW",
+    "Definition": "This instruction performs arithmetic right on the value in the first register by the shift amount held inside the second source register and stores inside the destination register.",
+    "Syntax": "sraw rd, rs1, rs2",
+    "Examples": "sraw x2, x2, x4",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SRLIW",
+    "Definition": "This instruction performs logical right on the value in the register by the shift amount held in the immediate data and stores the result inside the destination register.",
+    "Syntax": "srliw rd, rs, imm",
+    "Examples": "srliw x7, x7, x1",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SRAIW",
+    "Definition": "The instruction performs arithmetic right on the value on the first source register by the shift amount held in the immediate and is stored inside the destination register.",
+    "Syntax": "sraiw rd, rs1, imm",
+    "Examples": "sraiw x3, x3, x8",
+    "32 bit": ""
+  },
+  {
+    "Mnemonic": "SUBW",
+    "Definition": "This instructions perform subtraction of the first and second source register and stores inside the destination register.",
+    "Syntax": "subw rd, rs1, rs2",
+    "Examples": "subw x1, x2, x3",
+    "32 bit": ""
+  }
+]

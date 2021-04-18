@@ -28,14 +28,22 @@
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="manifest" href="./images/site.webmanifest">
 
-     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-     <link rel="stylesheet" href="../../css/font-awesome.min.css">
-     <link rel="stylesheet" href="../../css/aos.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/aos.css">
 
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="../../css/tooplate-gymso-style.css">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../../css/tooplate-gymso-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://anseki.github.io/jquery-ui-autocomplete-scroll/js/jquery.ui.autocomplete.scroll.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
 
 </head>
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50" >
@@ -77,30 +85,159 @@
 
         </div>
     </nav>
-    <!-- HERO -->
-    <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
 
-        <div class="bg-overlay"></div>
+    <section class="feature" id="feature">
+           <div class="container">
+                <div class="row">
+                    <div class="col-md-12 center">
+                        <center><img class="img-fluid" style="margin:5px" src="./images/AXIAL.png" height="100%"/>
+                        <br>
+                        <h1 class="text-white">Rez</h1>
+                        <h4 class="text-white">Multiple Architecture Instruction Reference</h4></center>
+                        <br><br>
+                    </div>
 
-        <div class="container">
-            <div class="row">
+                    <div class="col-lg-12 col-md-10 mx-auto col-12">
+                        <div class="row">
+                            <div class="col-md-6" style="margin-top: -8px;">
+                                <h5 class="blog-title" id="search_name">Instruction Set Search</h5>
+                                <div style="display: flex;">
+                                    <select id="arch" class="col-md-5 form-control" onchange="update($(this).val())">
+                                        <option selected>Select the Architecture</option>
+                                        <option value="ARM">ARM</option>
+                                        <option value="MIPS">MIPS</option>
+                                        <option value="x86">X86</option>
+                                        <option value="RISC-V">RISC-V</option>
+                                    </select>
+                                    <input class="col-md-7 form-control" type="text"id="rez_search" placeholder="Query">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="blog-title" id="search_name">DuckDuckGo Search</h5>
+                                <input type="text" class="form-control" id="ddg" placeholder="Query">
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="blog-title" id="search_name">StackOverFlow</h5>
+                                <input type="text" class="form-control" id="stackoverflow" placeholder="Query">
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="blog-title" id="search_name">Reverse Engineering Stack Exchange</h5>
+                                <input type="text" class="form-control" id="reverse" placeholder="Query">
+                            </div>
+                        </div>                      
+                    </div>
+                    
+                    <div class="d-flex flex-column justify-content-center col-md-12">
+                        <br><br>
+                        <h1 class="text-white">PARACORD</h1>
+                        
+                        <button class="custom-btn col-md-3" id="invite" onclick="javascript:window.location.href='https:\/\/discord.com/oauth2/authorize?client_id=830233244318302218&scope=bot'">Invite</button>
+                        <br><br>
+                        <div class="col-md-12">
+                            <p>A Discord Bot which is developed to aid reverse engineers, it aims to support your RE work as a Disassembler which currently supports x86, x16, x64, ARM64 architectures along with other features like type conversion and lot more!</p>
+                        </div>
+                        <br><br>
+                    </div>
 
-                <div class="d-flex justify-content-center col-md-12 col-12">
-                    <div>
-                      <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Coming soon...</h1>
-                      <center><h2 class="center" style="color:#CA70E0" data-aos="fade-up" data-aos-delay="500">Rez</h2></center>
-                      <br>
-                      <div data-type="countdown" data-id="2502655" class="tickcounter" style="width: 100%; position: relative; padding-bottom: 25%">
-                        <a href="//www.tickcounter.com/countdown/2502655/my-countdown" style="background-color: transparent">REZ</a>
-                        <a href="//www.tickcounter.com/" title="Countdown">Countdown</a>
-                      </div>
-                      <script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12" >
+                        <h3 class="text-white">- Disassembler:</h3>
+                        <p>The bot supports a disassembler for multiple architecture like x64, x86,x16, arm64 upon the user's input of opcodes making it easy and simple for the user. </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" style="margin:5px" src="./images/opcodes2.png" width="650px">
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" style="margin:5px" src="./images/Untitled.png" width="650px">
+                    </div>
+                    <div class="col-md-12">
+                        <img class="img-fluid" style="margin:5px" src="./images/Untitled 1.png" width="100%">
                     </div>
                 </div>
-            </div>
-        </div>
+                
+                <br><br>
+                <div class="row">
+                    <div class="col-md-12" >
+                        <h3 class="text-white">- Hex2CByteArray:</h3>
+                        <p>Convert hex bytes to a C bytes array.</p>
+                    </div>
+                    <div class="col-md-12">
+                        <img class="img-fluid" style="margin:5px" src="./images/Untitled 2.png" width="100%">
+                    </div>
+                </div>
 
+                <br><br>
+                <div class="row">
+                    <div class="col-md-12" >
+                        <h3 class="text-white">- Hex2C#ByteArray:</h3>
+                        <p>Converts hex bytes to C# byte array</p>
+                    </div>
+                    <div class="col-md-12">
+                        <img class="img-fluid" style="margin:5px" src="./images/Untitled 3.png" width="100%">
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="row">
+                    <div class="col-md-12" >
+                        <h3 class="text-white">- Hex2RustVec:</h3>
+                        <p>Converts hex bytes to Rust Vector.</p>
+                    </div>
+                    <div class="col-md-12">
+                        <img class="img-fluid" style="margin:5px" src="./images/Untitled 4.png" width="100%">
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="row">
+                    <div class="col-md-12" >
+                        <h3 class="text-white">- Supports multiple conversions:</h3>
+                        <p>This bot is capable of converting hexadecimal to binary, base64 to ASCII, ASCII to hex and reverse a string and lot more, based on user input to save time and efforts of visiting multiple websites for type conversion.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" style="margin:5px" src="./images/Untitled 5.png" width="100%">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" style="margin:5px" src="./images/Untitled 6.png" width="100%">
+                    </div>
+                </div>
+                
+                <br><br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-white">References </h3>
+                        <br>
+                        <p class="text-white">This reference is currently in beta version and has been made to make your RE process a bit less painful while you spend most of your time reading various architecture manuals , we will keep updating this instruction set reference within a certain time frame. </p>
+                        <pre class="text-white">
+    https://www.felixcloutier.com/x86/
+
+    https://developer.arm.com/documentation/
+
+    https://www.keil.com/support/man/docs/armasm/armasm_dom1361289850039.html
+
+    https://shakti.org.in/docs/risc-v-asm-manual.pdf
+                        </pre>
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="row" >
+                    <div class="col-md-12">
+                        <h3 class="text-white">Maintainers</h3><br>
+                        <p>- The bot has been coded  and maintained by <a class="text-white" href="https://twitter.com/0xastr0"><u>astr0</u></a></p>
+                        <p>- Webpage maintained by <a class="text-white" href="https://twitter.com/aravindha1234u"><u>T3CH_W1Z4RD</u></a></p>
+                    </div>
+                </div>
+
+           </div>
     </section>
+
 
     <!-- FOOTER -->
     <footer class="site-footer">
@@ -124,11 +261,11 @@
     </footer>
 
      <!-- SCRIPTS -->
-     <script src="../../js/jquery.min.js"></script>
      <script src="../../js/bootstrap.min.js"></script>
      <script src="../../js/aos.js"></script>
      <script src="../../js/smoothscroll.js"></script>
      <script src="../../js/custom.js"></script>
+     <script src="../../js/script.js"></script>
 
 </body>
 </html>

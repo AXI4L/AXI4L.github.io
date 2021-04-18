@@ -1,0 +1,332 @@
+[
+ {
+   "Mnemonic": "ADDI ",
+   "Description": "Adds Immediate Word",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "ADDIU",
+   "Description": "Adds Immediate Unsigned Word",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SLTI",
+   "Description": "Sets on Less than Immediate",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SLTI",
+   "Description": "Sets on Less than Immediate",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SLTIU",
+   "Description": "Sets on Less than immediate unsigned",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "ANDI",
+   "Description": "Performs AND operation with the immediate.",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "ORI ",
+   "Description": "Performs logical OR operation with the immediate.",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "XORI",
+   "Description": "Performs exclusive OR on the immediate.",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "LUI",
+   "Description": "Loads Upper Immediate",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DADDI ",
+   "Description": "Doubleword Adds on the immediate.",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DADDIU",
+   "Description": "Doubleword Adds on the unsigned immediate.",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "ADDU ",
+   "Description": "Adds Unsigned Word",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "ADD ",
+   "Description": "Adds Word",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SUB ",
+   "Description": "Substract Word",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SUBU ",
+   "Description": "Subtracts Unsigned Word",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DADD ",
+   "Description": "Adds Double word",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DADDU ",
+   "Description": "Adds Double word unsigned",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DSUB",
+   "Description": "Substracts Double word",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DSUBU",
+   "Description": "Subtracts unsigned Doubleword",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SLT",
+   "Description": "Sets on Less than",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SLTU",
+   "Description": "Sets on less than unsigned",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "AND ",
+   "Description": "Performs AND operation",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "XOR ",
+   "Description": "Performs exclusive XOR operation",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SLL ",
+   "Description": "Performs Shift Word Left Logical",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SRL",
+   "Description": "Shifts Word Right Logical ",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SRA ",
+   "Description": "Shifts Word Right Arithmetic ",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SLLV",
+   "Description": "Shifts word left logical variable",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SRLV",
+   "Description": "Shifts word right logical variable ",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SRAV ",
+   "Description": "Shifts word right arithmetic value",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DSLL ",
+   "Description": "Doubleword shifts Left Logical",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DSRL",
+   "Description": "Doubleword Shifts right logical",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DSRAV ",
+   "Description": "Double word shift right arithmetic",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DSLLV ",
+   "Description": "Double word shift left logical variable.",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "MULT ",
+   "Description": "Multiplies word",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "MULTU ",
+   "Description": "Multiplies Unsigned Word",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DIV",
+   "Description": "Divides Word",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DMULT ",
+   "Description": "DoubleWord Multiply ",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DDIV ",
+   "Description": "Doubleword Divide",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "DIV ",
+   "Description": "Divides Word",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "JAL ",
+   "Description": "Jump and Link ",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "JR ",
+   "Description": "Jump Register",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "JALR ",
+   "Description": "Jumps and Links Register",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "BEQ",
+   "Description": "Branch on Equal ",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "BNE ",
+   "Description": "Branch on not equal ",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "BLEZ ",
+   "Description": "Branch on Less than or equal to zero ",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "BEQL ",
+   "Description": "Branch on Equal Likely ",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "BGTZL",
+   "Description": "Branch on greater than zero likely",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "BLTZ",
+   "Description": "Branch on Less than Zero ",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "BGEZ",
+   "Description": "Branch on Greater Than or Equal to Zero",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "BLTZL",
+   "Description": "Branch on Less Than Zero and Link",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "SYSCALL ",
+   "Description": "System Call ",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "BREAK",
+   "Description": "Breakpoint",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "TGE",
+   "Description": "Trap if greater than or equal ",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "TNE",
+   "Description": "Trap if not equal ",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "TGEI",
+   "Description": "Trap if Greater Than or Equal Immediate",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "TGEIU",
+   "Description": "Trap if Greater Than or Equal Unsigned Immediate",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "TLTI",
+   "Description": "Trap if Less Than Immediate",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "TLTIU",
+   "Description": "Trap if Less Than Unsigned Immediate",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "TEQI",
+   "Description": "Trap if Equal Immediate",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "TNEI",
+   "Description": "Trap if Not Equal Immediate",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "MOVN",
+   "Description": "Move Conditional on Not Zero",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "MOVZ",
+   "Description": "Move Conditional on Zero",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "PREF",
+   "Description": "Prefetch Indexed",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "PREFX",
+   "Description": "Prefetch Indexed",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "COPz",
+   "Description": "Coprocessor-z Operation",
+   "Column": ""
+ },
+ {
+   "Mnemonic": "",
+   "Description": "",
+   "Column": ""
+ }
+]

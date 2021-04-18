@@ -1,0 +1,236 @@
+[
+ {
+   "Mnemonic": "ADC ",
+   "Definition": "Performs Add with Carry",
+   "Opcode": 101,
+   "Examples": "ADC R4, R0, R2 ;Adding the least significant words."
+ },
+ {
+   "Mnemonic": "ADD",
+   "Definition": "Performs Addition",
+   "Opcode": 100,
+   "Examples": "ADD R2, R1, R2 "
+ },
+ {
+   "Mnemonic": "AND",
+   "Definition": "Performs AND operation ",
+   "Opcode": 0,
+   "Examples": "AND R9, R2, #0XFF00 "
+ },
+ {
+   "Mnemonic": "B",
+   "Definition": "Performs Branching",
+   "Opcode": null,
+   "Examples": "B test   ;jumps to label named test"
+ },
+ {
+   "Mnemonic": "BIC ",
+   "Definition": "Performs Bit clear",
+   "Opcode": 1110,
+   "Examples": "BIC R0, R1, #0xab "
+ },
+ {
+   "Mnemonic": "BX ",
+   "Definition": "Performs Branching and exchange instruction set ",
+   "Opcode": null,
+   "Examples": "BX R0 ; Branch and change to                    THUMB"
+ },
+ {
+   "Mnemonic": "CMN ",
+   "Definition": "Compares Negative",
+   "Opcode": 1011,
+   "Examples": "CMN A, B ;Makes comparison but with the second operand negated which means {A-(-B)}"
+ },
+ {
+   "Mnemonic": "CMP ",
+   "Definition": "Performs Comparision ",
+   "Opcode": 1010,
+   "Examples": "CMP A, B ; If two operands A & B are equal the result is zero or ( A - B)"
+ },
+ {
+   "Mnemonic": "LDC ",
+   "Definition": "Loads/Transfers coprocessor from memory ",
+   "Opcode": null,
+   "Examples": "LDC p1,c2,table  ;Loads c2 of coproc 1 from address table using a PC relative address"
+ },
+ {
+   "Mnemonic": "CDP ",
+   "Definition": "Coprocessor Data Processing",
+   "Opcode": null,
+   "Examples": "CDP  p1, 11, c1, c2, c3 ;Request coproc 1 to do operation 11 on CR2 and CR3, and put the result in CR1."
+ },
+ {
+   "Mnemonic": "EOR ",
+   "Definition": "Performs Exclusive OR ",
+   "Opcode": 1,
+   "Examples": "EOR R7, R11, #0x18181818 ;R7 is the destination operand and R11 is the register holding the first operand."
+ },
+ {
+   "Mnemonic": "LDR ",
+   "Definition": "Loads register from memory",
+   "Opcode": null,
+   "Examples": "LDR R1, [R3, #17] ;Load R1 from contents of R3+17, but not writing back."
+ },
+ {
+   "Mnemonic": "MCR ",
+   "Definition": "Moves Register to co-processor register",
+   "Opcode": null,
+   "Examples": "MCR p6, 0, R4, c5, C6 ; Requests coproc 6 to perform operation 0 on R4 and place the result in c6"
+ },
+ {
+   "Mnemonic": "MLA ",
+   "Definition": "Performs Multiplication between Accumulate",
+   "Opcode": null,
+   "Examples": "MLA R1, R2, R3, R4 ;Conditionally R1 := R2*R3+RA, the product value of R2 and R3 and addition of the product is stored in R1 register."
+ },
+ {
+   "Mnemonic": "MOV ",
+   "Definition": "Moves register or constant",
+   "Opcode": 1101,
+   "Examples": "MOV R`, R0, LSR#8 ; Gets routine offset."
+ },
+ {
+   "Mnemonic": "MRC ",
+   "Definition": "Moves from coprocessor register to CPU register",
+   "Opcode": null,
+   "Examples": "MRC p2, 5,R3, c5, c6; Requests coproc to perform operation 5 on c5 and c6 and transfer the result back to R3."
+ },
+ {
+   "Mnemonic": "MRS",
+   "Definition": "Move PSR flags to register",
+   "Opcode": null,
+   "Examples": "MRS Rd, CSPR ; Rd[31:0] ← CPSR[31:0]"
+ },
+ {
+   "Mnemonic": "MSR ",
+   "Definition": "Move register to PST flags",
+   "Opcode": null,
+   "Examples": "MSR CSPR, 0xF000000 ; Sets all the flags regardless of their previous state."
+ },
+ {
+   "Mnemonic": "MUL ",
+   "Definition": "Performs Multiplication ",
+   "Opcode": null,
+   "Examples": "MUL R1, R2, R3 ;The product of R2 & R3 is stored in R1."
+ },
+ {
+   "Mnemonic": "MVN ",
+   "Definition": "Moves negative register",
+   "Opcode": 1111,
+   "Examples": "MVNNE r11, #0xF000000B ; This immediate value is not available in Thumb."
+ },
+ {
+   "Mnemonic": "RSB ",
+   "Definition": "Performs Reverse Substract ",
+   "Opcode": 11,
+   "Examples": "RSB r3, r3, #1337 ; Substracts contents of R4 from 1337."
+ },
+ {
+   "Mnemonic": "RSC ",
+   "Definition": "Performs reverse subtraction with carry",
+   "Opcode": 111,
+   "Examples": "RSCSLE r0, r5, r0, LSL r4 ; conditional flags set"
+ },
+ {
+   "Mnemonic": "STC ",
+   "Definition": "Stores coprocessor register to memory",
+   "Opcode": null,
+   "Examples": "STCLEQLp2, c3, [R6, #34]! ; Conditionally store c3 of coprocessor 2 into an address 34 bytes up from R6 and then use long transfer option."
+ },
+ {
+   "Mnemonic": "SBC ",
+   "Definition": "Performs Subtract with carry ",
+   "Opcode": 110,
+   "Examples": "sbc R2, R8 , R11 ;Substraction performed between R8 and R11 and the result stored in R2."
+ },
+ {
+   "Mnemonic": "STM ",
+   "Definition": "Stores Multiple",
+   "Opcode": null,
+   "Examples": "STM R5!, {R5, R4,R9} ;value stored for R5."
+ },
+ {
+   "Mnemonic": "STR",
+   "Definition": "Stores register to memory",
+   "Opcode": null,
+   "Examples": "STR R2, [R9, #consta-struc] ;Consta-struc is an expression evaluating to a constant in the range 0-4095."
+ },
+ {
+   "Mnemonic": "SUB ",
+   "Definition": "Performs substraction",
+   "Opcode": 10,
+   "Examples": "SUB R3, R1, R0 ;Substraction performed between destination and source operands R1 and R0 and the result is stored inside R3 register. "
+ },
+ {
+   "Mnemonic": "SWI ",
+   "Definition": "Performs Software Interrupt ",
+   "Opcode": null,
+   "Examples": ""
+ },
+ {
+   "Mnemonic": "SWP ",
+   "Definition": "Performs swapping register with memory",
+   "Opcode": null,
+   "Examples": "SWP R1, R2 , [#memory_location] ; Where R1 is the destination register and R2 is the source register and memory_location is the address in memory."
+ },
+ {
+   "Mnemonic": "TST ",
+   "Definition": "Test bits",
+   "Opcode": 1000,
+   "Examples": "TST R0, #0X4f9 ;Where R0 is the register holding the first operand and #0x4f0 is the flexible second operand."
+ },
+ {
+   "Mnemonic": "TEQ ",
+   "Definition": "Tests bitwise equality",
+   "Opcode": 1001,
+   "Examples": "TEQ R10, R0 ;Bitwise exclusive OR operation is performed in the value of R10 and the R0. "
+ },
+ {
+   "Mnemonic": "UMULL{cond}{S} RdLo, RdHi, Rm, Rs ",
+   "Definition": "Unsigned Multiply Long ",
+   "Opcode": null,
+   "Examples": "UMULL R1, R4,R2,R3 ; R4 , R1 = R2 * R3"
+ },
+ {
+   "Mnemonic": "UMLAL{cond}{S} RdLo, RdHi, Rm, Rs",
+   "Definition": "Unsigned Multiply& Accumulate Long",
+   "Opcode": null,
+   "Examples": "R1, R5,R2,R3 ; R5, R1 := R2 *R3+R5, R1 sets the condition codes."
+ },
+ {
+   "Mnemonic": "SMULL{cond}{S} RdLO, RdHi, Rm, Rs",
+   "Definition": "Signed Multiply Long ",
+   "Opcode": null,
+   "Examples": ""
+ },
+ {
+   "Mnemonic": "SMLAL{cond}{S} RdLo, RdHi, Rm, Rs",
+   "Definition": "Signed Multiply & Acumulate Long ",
+   "Opcode": null,
+   "Examples": ""
+ },
+ {
+   "Mnemonic": "LDRH ",
+   "Definition": "Loads with register offset, pre-indexed. ",
+   "Opcode": null,
+   "Examples": "LDRHR1, [ R2, -R3] ! Loads R2 from the contents of the halfword address contained in R2-R2 anbd write back address to R2 register"
+ },
+ {
+   "Mnemonic": "STRH ",
+   "Definition": "Stores with immediate offset, pre-indexed immediate offset.",
+   "Opcode": null,
+   "Examples": "STRH R3, [ R4, #15]; Stores the halfword in R3 at R15+15 but don't write back."
+ },
+ {
+   "Mnemonic": "LSR",
+   "Definition": "Logical Shift Right ",
+   "Opcode": null,
+   "Examples": "LSR R4, R5, R6  ;R5 is shifted right and R6 is holding a shift value to apply the value in R5 and R4 is the destination register."
+ },
+ {
+   "Mnemonic": "LDRSH",
+   "Definition": "Loads with immediate offset , post -indexed immediate offset.",
+   "Opcode": null,
+   "Examples": "LDRSH R8, [R2], #-233; Loads R8 with the sign extended contents of the byte address contained in R2 and write back R2-233 to R2."
+ }
+]
